@@ -1,9 +1,4 @@
 /* Загальний стиль */
-body {
-  font-family: "Roboto", sans-serif; /* Встановлює шрифт для всього тексту */
-  color: #434455; /* Колір тексту */
-  background-color: #ffffff; /* Колір фону */
-}
 
 /* Головний стиль для хедера */
 .main-header {
