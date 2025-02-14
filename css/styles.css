@@ -3,7 +3,7 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #434455;
   background-color: #fff;
 }
@@ -95,7 +95,7 @@ button {
 }
 
 .logo {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.17;
@@ -162,7 +162,7 @@ button {
   }
 
   .nav-link.current::after {
-    content: "";
+    content: '';
 
     position: absolute;
     left: 0;
