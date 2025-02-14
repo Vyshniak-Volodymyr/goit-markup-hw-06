@@ -1,20 +1,20 @@
 .hidden {
-  display: none;
+  display: none; /* приховує елемент */
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  color: #434455;
-  background-color: #fff;
+  font-family: 'Roboto', sans-serif; /* шрифт для тексту */
+  color: #434455; /* колір тексту */
+  background-color: #fff; /* колір фону */
 }
 
-/* reset */
+/* скидання стилів */
 
 ul,
 ol {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+  list-style-type: none; /* відсутність маркерів у списку */
+  margin: 0; /* відсутність зовнішніх відступів */
+  padding: 0; /* відсутність внутрішніх відступів */
 }
 
 h1,
@@ -24,176 +24,171 @@ h4,
 h5,
 h6,
 p {
-  margin: 0;
+  margin: 0; /* відсутність зовнішніх відступів */
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none; /* відсутність підкреслення для посилань */
 }
 
 img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+  display: block; /* виведення зображення як блоку */
+  max-width: 100%; /* максимальна ширина 100% */
+  height: auto; /* автоматична висота для збереження пропорцій */
 }
 
 button {
-  cursor: pointer;
+  cursor: pointer; /* курсор у вигляді вказівника на кнопках */
 }
 
 .visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(100%);
-  margin: -1px;
+  position: absolute; /* абсолютне позиціювання */
+  white-space: nowrap; /* відсутність переносу тексту */
+  width: 1px; /* мінімальна ширина */
+  height: 1px; /* мінімальна висота */
+  overflow: hidden; /* приховування вмісту */
+  border: 0; /* відсутність рамки */
+  padding: 0; /* відсутність внутрішніх відступів */
+  clip: rect(0 0 0 0); /* приховування елемента */
+  clip-path: inset(100%); /* приховування елемента */
+  margin: -1px; /* від'ємний зовнішній відступ */
 }
 
-/* common */
+/* спільні стилі */
 
 .container {
-  max-width: 320px;
-  padding: 0 16px;
-  margin: 0 auto;
+  max-width: 320px; /* максимальна ширина контейнера */
+  padding: 0 16px; /* внутрішні відступи */
+  margin: 0 auto; /* відцентровування */
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
+    max-width: 768px; /* зміна максимального розміру контейнера для екранів більших за 768px */
   }
 }
 
 @media screen and (min-width: 1158px) {
   .container {
-    max-width: 1158px;
-    padding: 0 15px;
+    max-width: 1158px; /* зміна максимального розміру контейнера для екранів більших за 1158px */
+    padding: 0 15px; /* зміна внутрішніх відступів */
   }
 }
 
-/* header */
+/* хедер */
 
 .page-header {
-  border-bottom: 1px solid #e7e9fc;
-  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
-    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
+  border-bottom: 1px solid #e7e9fc; /* нижня рамка */
+  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), /* тінь */
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08); /* кілька рівнів тіней */
 }
 
 .header-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: flex; /* використання флексового контейнера */
+  align-items: center; /* вирівнювання по вертикалі */
+  justify-content: space-between; /* вирівнювання по горизонталі з розподілом простору */
 }
 
 .nav-list,
 .contacts {
-  display: none;
+  display: none; /* приховування навігаційного списку та контактів */
 }
 
 .logo {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #4d5ae5;
+  font-family: 'Raleway', sans-serif; /* шрифт для логотипа */
+  font-weight: 700; /* жирний шрифт */
+  font-size: 18px; /* розмір шрифта */
+  line-height: 1.17; /* міжрядковий інтервал */
+  letter-spacing: 0.03em; /* міжлітерний інтервал */
+  text-transform: uppercase; /* великий регістр для букв */
+  color: #4d5ae5; /* колір тексту */
 }
 
 .header-logo {
-  padding: 16px 0;
-  display: block;
+  padding: 16px 0; /* внутрішні відступи для логотипа */
+  display: block; /* відображення як блоку */
 }
 
 .header-logo .logo-part {
-  color: #2e2f42;
+  color: #2e2f42; /* колір частини логотипа */
 }
 
 .burger-btn {
-  padding: 0;
-  border: none;
-  background-color: transparent;
+  padding: 0; /* відсутність внутрішніх відступів */
+  border: none; /* відсутність рамки */
+  background-color: transparent; /* прозорий фон */
 }
 
 .burger-icon {
-  display: block;
-  fill: #2f2f37;
+  display: block; /* відображення іконки як блоку */
+  fill: #2f2f37; /* колір іконки */
 }
 
 @media screen and (min-width: 768px) {
   .burger-btn {
-    display: none;
+    display: none; /* приховування бургер-меню на екранах більших за 768px */
   }
 
   .header-nav {
-    display: flex;
-    align-items: center;
+    display: flex; /* флекс-контейнер для навігації */
+    align-items: center; /* вирівнювання по вертикалі */
   }
 
   .nav-list {
-    display: flex;
-    align-items: center;
-    gap: 40px;
+    display: flex; /* флекс-контейнер для елементів навігації */
+    align-items: center; /* вирівнювання по вертикалі */
+    gap: 40px; /* відстань між елементами */
   }
 
   .header-logo {
-    padding: 24px 0;
-    margin-right: 120px;
+    padding: 24px 0; /* зміна внутрішніх відступів */
+    margin-right: 120px; /* правий зовнішній відступ */
   }
 
   .nav-link {
-    display: block;
-    padding: 24px 0;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: block; /* відображення елементів навігації як блоків */
+    padding: 24px 0; /* внутрішні відступи */
+    font-weight: 500; /* середній шрифт */
+    font-size: 16px; /* розмір шрифта */
+    line-height: 1.5; /* міжрядковий інтервал */
+    letter-spacing: 0.02em; /* міжлітерний інтервал */
+    color: #2e2f42; /* колір тексту */
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); /* ефект плавної зміни кольору */
   }
 
   .nav-link.current {
-    position: relative;
+    position: relative; /* відносне позиціювання */
   }
 
   .nav-link.current::after {
-    content: '';
-
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-
-    background-color: #404bbf;
+    content: ''; /* псевдоелемент */
+    position: absolute; /* абсолютне позиціювання */
+    left: 0; /* розташування зліва */
+    bottom: -1px; /* розташування знизу */
+    width: 100%; /* ширина 100% */
+    height: 4px; /* висота */
+    border-radius: 2px; /* округлість кутів */
+    background-color: #404bbf; /* колір фону */
   }
 
   .contacts {
-    font-style: normal;
-    display: block;
+    font-style: normal; /* нормальний стиль для шрифта */
+    display: block; /* відображення блоку */
   }
 
   .contacts-list {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+    display: flex; /* флекс-контейнер для списку контактів */
+    flex-direction: column; /* вертикальне вирівнювання */
+    gap: 12px; /* відстань між елементами */
   }
 
   .contacts-link {
-    display: block;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
-    color: #434455;
-
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: block; /* відображення контактів як блоків */
+    font-size: 12px; /* розмір шрифта */
+    line-height: 1.17; /* міжрядковий інтервал */
+    letter-spacing: 0.04em; /* міжлітерний інтервал */
+    color: #434455; /* колір тексту */
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); /* ефект плавної зміни кольору */
   }
 
   .nav-link:hover,
@@ -201,75 +196,159 @@ button {
   .contacts-link:hover,
   .contacts-link:focus,
   .nav-link.current {
-    color: #404bbf;
+    color: #404bbf; /* зміна кольору при наведенні */
   }
 }
 
 @media screen and (min-width: 1158px) {
   .header-logo {
-    margin-right: 76px;
+    margin-right: 76px; /* зменшення правого зовнішнього відступу на більших екранах */
   }
 
   .contacts-list {
-    flex-direction: row;
-    align-items: center;
-    gap: 40px;
+    flex-direction: row; /* горизонтальне вирівнювання контактів */
+    align-items: center; /* вирівнювання по вертикалі */
+    gap: 40px; /* відстань між елементами */
   }
 
   .contacts-link {
-    padding: 24px 0;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+    padding: 24px 0; /* внутрішні відступи */
+    font-size: 16px; /* розмір шрифта */
+    line-height: 1.5; /* міжрядковий інтервал */
+    letter-spacing: 0.02em; /* міжлітерний інтервал */
   }
 }
 
-/* mobile menu */
+/* мобільне меню */
 
 .mobile-menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #fff;
-
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: fixed; /* фіксоване позиціювання */
+  top: 0; /* розташування зверху */
+  left: 0; /* розташування зліва */
+  width: 100%; /* ширина 100% */
+  height: 100%; /* висота 100% */
+  background-color: #fff; /* білий фон */
+  opacity: 0; /* прозорість */
+  visibility: hidden; /* приховане відображення */
+  pointer-events: none; /* відключення взаємодії */
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), /* ефект плавної зміни прозорості */
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1); /* ефект плавної зміни видимості */
 }
 
 .mobile-menu.is-open {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
+  opacity: 1; /* видимість меню */
+  visibility: visible; /* меню стає видимим */
+  pointer-events: auto; /* можливість взаємодії */
 }
 
 .mobile-menu-container {
-  position: relative;
-  padding-top: 72px;
-  padding-bottom: 40px;
-
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+  position: relative; /* відносне позиціювання */
+  padding-top: 72px; /* верхній внутрішній відступ */
+  padding-bottom: 40px; /* нижній внутрішній відступ */
+  display: flex; /* флекс-контейнер */
+  flex-direction: column; /* вертикальне вирівнювання */
+  height: 100%; /* висота 100% */
 }
 
 .mobile-menu-close {
-  position: absolute;
-  top: 24px;
-  right: 24px;
+  position: absolute; /* абсолютне позиціювання */
+  top: 24px; /* верхній відступ */
+  right: 24px; /* правий відступ */
 }
 
 .mobile-menu-nav {
-  margin-bottom: auto;
+  margin-bottom: auto; /* відстань внизу */
 }
 
 @media screen and (min-width: 768px) {
   .mobile-menu {
-    display: none;
+    display: none; /* приховування мобільного меню на екранах більших за 768px */
+  }
+}
+
+/*  Section №1  */
+
+/* Mobile First Styles */
+.main-section {
+  background-image: url("images/Foto_a.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #2e2f42;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+
+.container {
+  max-width: 216px;
+  padding: 0 52px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #ffffff;
+  margin-bottom: 72px;
+  text-align: center;
+}
+
+.action-button {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  padding: 16px 24px;
+  background-color: #4d5ae5;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.action-button:hover,
+.action-button:focus {
+  background-color: #404bbf;
+}
+
+@media screen and (min-width: 768px) {
+  .main-section {
+    background-image: url("images/Foto_b.jpg");
+    padding-top: 112px;
+    padding-bottom: 36px;
+  }
+
+  .container {
+    max-width: 496px;
+    padding: 0 136px;
+  }
+
+  .section-title {
+    font-size: 56px;
+    margin-bottom: 36px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .main-section {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/img-name.jpeg");
+    padding-top: 180px;
+    padding-bottom: 180px;
+  }
+
+  .container {
+    max-width: 1158px;
+    padding: 0 15px;
   }
 }
