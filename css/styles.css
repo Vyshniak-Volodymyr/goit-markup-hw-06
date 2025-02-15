@@ -385,94 +385,135 @@ button {
   }
 }
 
-/* Мобільний перший підхід */
+/* Секція №1 END*/
 
-/* Секція №2 */
+/* Mobile First */
 .two-section {
-  padding: 40px 16px; /* Відступи зверху та знизу для мобільної версії */
-  background-color: #fff; /* Білий фон */
+  padding: 120px 0; /* Відступи зверху та знизу */
+  background-color: white; /* Білий фон */
 }
 
-/* Контейнер */
 .container {
-  padding: 0 16px; /* Відступи з боків */
+  width: 100%; /* Ширина контейнера 100% для мобільних */
+  padding: 0 16px; /* Внутрішні відступи зліва та справа */
 }
 
-/* Заголовок */
-.list-title {
-  font-family: Roboto; /* Шрифт */
-  font-weight: 700; /* Жирний шрифт */
-  font-size: 36px; /* Розмір шрифта */
-  line-height: 40px; /* Висота рядка */
-  letter-spacing: 2%; /* Міжлітерний інтервал */
-  text-align: center; /* Вирівнювання по центру */
-  margin: 0; /* Без відступів */
-}
-
-/* Параграф */
-.list-paragraph {
-  font-family: Roboto; /* Шрифт */
-  font-weight: 500; /* Напівжирний шрифт */
-  font-size: 16px; /* Розмір шрифта */
-  line-height: 24px; /* Висота рядка */
-  letter-spacing: 2%; /* Міжлітерний інтервал */
-  text-align: center; /* Вирівнювання по центру */
-  margin-top: 8px; /* Відступ зверху */
-  margin-bottom: 0; /* Без відступу знизу */
-}
-
-/* Список з елементами */
 .team-list {
-  display: block; /* Список як блочний елемент */
-  margin: 0; /* Без зовнішніх відступів */
-  padding: 0; /* Без внутрішніх відступів */
+  display: flex;
+  flex-direction: column; /* Вертикальне розташування елементів */
+  gap: 24px; /* Відстань між елементами */
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-/* Елемент списку */
 .list-section-two {
-  margin-bottom: 24px; /* Відступ між елементами */
-  padding: 0 16px; /* Відступи з боків */
+  width: 100%; /* Займає всю ширину */
+  padding: 0; /* Без внутрішніх відступів */
+  margin: 0; /* Без зовнішніх відступів */
 }
 
-/* Контейнер для іконки */
 .icon-container {
-  display: flex; /* Флексбокс для центрування */
-  justify-content: center; /* Центрування по горизонталі */
-  align-items: center; /* Центрування по вертикалі */
-  height: 112px; /* Висота */
-  background-color: #f4f4fd; /* Колір фону */
-  border-radius: 4px; /* Закруглені кути */
-  border: 1px solid #8e8f99; /* Обводка */
-  margin-bottom: 8px; /* Відступ знизу */
+  height: 112px;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+  border: 1px solid #8e8f99;
+  margin-bottom: 8px;
+  display: none; /* Векторні іконки не відображаються */
 }
 
-/* Таблет версія */
-@media screen and (min-width: 768px) {
-  .two-section {
-    padding: 80px 16px; /* Відступи зверху та знизу для планшета */
+.list-title {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: 2%;
+  text-align: center;
+}
+
+.list-paragraph {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 2%;
+  text-align: center;
+  margin: 0;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .container {
+    width: 736px;
   }
 
   .team-list {
-    display: grid; /* Використовуємо grid для планшетної версії */
-    grid-template-columns: repeat(2, 1fr); /* Дві колонки */
-    gap: 32px; /* Відступи між елементами */
+    flex-direction: row; /* Горизонтальне розташування */
+    flex-wrap: wrap;
   }
 
   .list-section-two {
-    width: 356px; /* Ширина для кожного елемента */
-    margin-bottom: 0; /* Без відступу знизу */
+    width: calc(50% - 16px); /* Два елементи в ряд */
+    padding: 16px;
+  }
+
+  .icon-container {
+    display: none; /* Векторні іконки не відображаються */
   }
 
   .list-title {
-    font-size: 36px; /* Розмір шрифта для заголовка */
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 2%;
+    text-align: left; /* Вирівнювання по лівому краю */
   }
 
   .list-paragraph {
-    font-size: 16px; /* Розмір шрифта для параграфа */
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 2%;
+    text-align: left; /* Вирівнювання по лівому краю */
   }
 }
 
-/* Десктопна версія - без змін */
-@media screen and (min-width: 1024px) {
-  /* Десктопний вигляд залишає все так, як є */
+/* Desktop */
+@media (min-width: 1158px) {
+  .container {
+    width: 1158px;
+  }
+
+  .team-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .list-section-two {
+    width: calc((100% - 72px) / 4); /* Для чотирьох елементів у ряді */
+  }
+
+  .icon-container {
+    display: flex; /* Векторні іконки відображаються на десктопі */
+  }
+
+  .list-title {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 2%;
+    text-align: left;
+  }
+
+  .list-paragraph {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 2%;
+    text-align: left;
+  }
 }
