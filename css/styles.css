@@ -384,3 +384,95 @@ button {
     margin-top: 36px; /* Відстань між текстом та кнопкою */
   }
 }
+
+/* Мобільний перший підхід */
+
+/* Секція №2 */
+.two-section {
+  padding: 40px 16px; /* Відступи зверху та знизу для мобільної версії */
+  background-color: #fff; /* Білий фон */
+}
+
+/* Контейнер */
+.container {
+  padding: 0 16px; /* Відступи з боків */
+}
+
+/* Заголовок */
+.list-title {
+  font-family: Roboto; /* Шрифт */
+  font-weight: 700; /* Жирний шрифт */
+  font-size: 36px; /* Розмір шрифта */
+  line-height: 40px; /* Висота рядка */
+  letter-spacing: 2%; /* Міжлітерний інтервал */
+  text-align: center; /* Вирівнювання по центру */
+  margin: 0; /* Без відступів */
+}
+
+/* Параграф */
+.list-paragraph {
+  font-family: Roboto; /* Шрифт */
+  font-weight: 500; /* Напівжирний шрифт */
+  font-size: 16px; /* Розмір шрифта */
+  line-height: 24px; /* Висота рядка */
+  letter-spacing: 2%; /* Міжлітерний інтервал */
+  text-align: center; /* Вирівнювання по центру */
+  margin-top: 8px; /* Відступ зверху */
+  margin-bottom: 0; /* Без відступу знизу */
+}
+
+/* Список з елементами */
+.team-list {
+  display: block; /* Список як блочний елемент */
+  margin: 0; /* Без зовнішніх відступів */
+  padding: 0; /* Без внутрішніх відступів */
+}
+
+/* Елемент списку */
+.list-section-two {
+  margin-bottom: 24px; /* Відступ між елементами */
+  padding: 0 16px; /* Відступи з боків */
+}
+
+/* Контейнер для іконки */
+.icon-container {
+  display: flex; /* Флексбокс для центрування */
+  justify-content: center; /* Центрування по горизонталі */
+  align-items: center; /* Центрування по вертикалі */
+  height: 112px; /* Висота */
+  background-color: #f4f4fd; /* Колір фону */
+  border-radius: 4px; /* Закруглені кути */
+  border: 1px solid #8e8f99; /* Обводка */
+  margin-bottom: 8px; /* Відступ знизу */
+}
+
+/* Таблет версія */
+@media screen and (min-width: 768px) {
+  .two-section {
+    padding: 80px 16px; /* Відступи зверху та знизу для планшета */
+  }
+
+  .team-list {
+    display: grid; /* Використовуємо grid для планшетної версії */
+    grid-template-columns: repeat(2, 1fr); /* Дві колонки */
+    gap: 32px; /* Відступи між елементами */
+  }
+
+  .list-section-two {
+    width: 356px; /* Ширина для кожного елемента */
+    margin-bottom: 0; /* Без відступу знизу */
+  }
+
+  .list-title {
+    font-size: 36px; /* Розмір шрифта для заголовка */
+  }
+
+  .list-paragraph {
+    font-size: 16px; /* Розмір шрифта для параграфа */
+  }
+}
+
+/* Десктопна версія - без змін */
+@media screen and (min-width: 1024px) {
+  /* Десктопний вигляд залишає все так, як є */
+}
