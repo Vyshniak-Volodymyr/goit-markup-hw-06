@@ -268,87 +268,124 @@ button {
 
 /*  Section №1  */
 
-/* Mobile First Styles */
+/* Стилі для мобільної версії */
+
+/* Стилі для мобільної версії */
+
+/* Перша секція для мобільного телефону */
 .main-section {
-  background-image: url("images/Foto_a.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-color: #2e2f42;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 72px;
-  padding-bottom: 72px;
+  background-image: url("../images/Foto_a.jpg"); /* Фонове зображення для мобільної версії */
+  background-repeat: no-repeat; /* Запобігає повторенню фону */
+  background-position: center; /* Центрує фон на елементі */
+  background-size: cover; /* Масштабує фон, щоб покрити весь елемент */
+  max-width: 320px; /* Встановлює максимальну ширину секції */
+  background-color: #2e2f42; /* Фоновий колір на випадок, якщо зображення не завантажиться */
+  text-align: center; /* Центрує текст всередині секції */
+  display: flex; /* Використовує flexbox для вирівнювання елементів */
+  align-items: center; /* Вертикальне вирівнювання елементів по центру */
+  justify-content: center; /* Горизонтальне вирівнювання елементів по центру */
+  margin: 0 auto; /* Центрує секцію по горизонталі */
+  padding-top: 72px; /* Відступ зверху на 72 пікселів */
+  padding-bottom: 72px; /* Відступ знизу на 72 пікселів */
 }
 
+/* Стилі для контейнера мобільної версії */
 .container {
-  max-width: 216px;
-  padding: 0 52px;
-  margin: 0 auto;
+  max-width: 216px; /* Максимальна ширина контейнера */
+  padding: 0 52px; /* Внутрішні відступи з боків по 52px */
+  margin: 0 auto; /* Центрування контейнера */
 }
 
+/* Заголовок секції для мобільної версії */
 .section-title {
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 1.2;
-  color: #ffffff;
-  margin-bottom: 72px;
-  text-align: center;
+  font-size: 20px; /* Розмір шрифту заголовка */
+  font-weight: 700; /* Жирність шрифту */
+  line-height: 1.2; /* Висота рядка */
+  color: #ffffff; /* Колір тексту */
+  margin: 0 auto 72px; /* Центрування заголовка і відступ знизу 72px */
+  text-align: center; /* Центрування тексту */
 }
 
+/* Стиль для кнопки мобільної версії */
 .action-button {
-  display: block;
-  min-width: 169px;
-  height: 56px;
-  border: none;
-  padding: 16px 24px;
-  background-color: #4d5ae5;
-  border-radius: 4px;
-  cursor: pointer;
-  margin: 0 auto;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
-  color: #ffffff;
-  text-decoration: none;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: block; /* Блочний елемент */
+  min-width: 169px; /* Мінімальна ширина кнопки */
+  height: 56px; /* Висота кнопки */
+  background-color: #4d5ae5; /* Колір фону кнопки */
+  border-radius: 4px; /* Заокруглені краї */
+  color: white; /* Колір тексту на кнопці */
+  font-family: "Roboto", sans-serif; /* Шрифт кнопки */
+  font-size: 16px; /* Розмір шрифту */
+  font-weight: 500; /* Жирність шрифту */
+  margin: 0 auto; /* Центрування кнопки */
+  text-decoration: none; /* Видалення підкреслення */
+  cursor: pointer; /* Зміна курсору на pointer */
+  padding: 16px 24px; /* Внутрішні відступи кнопки */
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Плавна зміна кольору фону */
 }
 
-.action-button:hover,
-.action-button:focus {
-  background-color: #404bbf;
+/* Стиль для кнопки при наведенні */
+.action-button:hover {
+  background-color: #3a46c0; /* Зміна кольору фону при наведенні */
 }
 
+/* Стилі для версії планшет */
 @media screen and (min-width: 768px) {
+
+  /* Перша секція для планшетної версії */
   .main-section {
-    background-image: url("images/Foto_b.jpg");
-    padding-top: 112px;
-    padding-bottom: 36px;
+    background-image: url("../images/Foto_b.jpg"); /* Фонове зображення для планшетної версії */
+    padding-top: 112px; /* Відступ зверху для планшетної версії */
+    padding-bottom: 36px; /* Відступ знизу для планшетної версії */
   }
 
+  /* Контейнер для планшетної версії */
   .container {
-    max-width: 496px;
-    padding: 0 136px;
+    max-width: 768px; /* Максимальна ширина для планшетів */
+    padding: 0 136px; /* Внутрішні відступи по боках */
   }
 
+  /* Заголовок секції для планшетної версії */
   .section-title {
-    font-size: 56px;
-    margin-bottom: 36px;
+    font-size: 40px; /* Збільшення розміру шрифту */
+    line-height: 1.2; /* Висота рядка */
+    margin: 0 auto 36px; /* Відступ знизу до кнопки */
+  }
+
+  /* Кнопка для планшетної версії */
+  .action-button {
+    min-width: 169px; /* Мінімальна ширина кнопки */
+    padding: 16px 24px; /* Внутрішні відступи */
+    margin: 0 auto; /* Центрування кнопки */
   }
 }
 
+/* Стилі для десктопної версії */
 @media screen and (min-width: 1158px) {
+
+  /* Перша секція для десктопної версії */
   .main-section {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/img-name.jpeg");
-    padding-top: 180px;
-    padding-bottom: 180px;
+    background-image: url("../images/Foto_c.jpg"); /* Фонове зображення для десктопної версії */
+    padding-top: 112px; /* Відступ зверху для десктопної версії */
+    padding-bottom: 36px; /* Відступ знизу для десктопної версії */
   }
 
+  /* Контейнер для десктопної версії */
   .container {
-    max-width: 1158px;
-    padding: 0 15px;
+    max-width: 1158px; /* Максимальна ширина контейнера */
+    padding: 0 136px; /* Внутрішні відступи по боках */
+  }
+
+  /* Заголовок секції для десктопної версії */
+  .section-title {
+    font-size: 56px; /* Великий розмір шрифту для десктопів */
+    margin: 0 auto 36px; /* Відступ знизу до кнопки */
+  }
+
+  /* Кнопка для десктопної версії */
+  .action-button {
+    min-width: 169px; /* Мінімальна ширина кнопки */
+    padding: 16px 24px; /* Внутрішні відступи */
+    margin: 0 auto; /* Центрування кнопки */
   }
 }
