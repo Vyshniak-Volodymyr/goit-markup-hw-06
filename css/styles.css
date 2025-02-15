@@ -387,133 +387,132 @@ button {
 
 /* Секція №1 END*/
 
-/* Mobile First */
+/* Section №2 */
 .two-section {
   padding: 120px 0; /* Відступи зверху та знизу */
-  background-color: white; /* Білий фон */
 }
 
+/* Дефолтний клас container для стандартизації розмірів */
 .container {
-  width: 100%; /* Ширина контейнера 100% для мобільних */
-  padding: 0 16px; /* Внутрішні відступи зліва та справа */
+  width: 1158px; /* Фіксована ширина контейнера */
+  margin: 0 auto; /* Центрування по горизонталі */
+  padding: 0 15px; /* Внутрішні відступи по горизонталі */
 }
 
 .team-list {
-  display: flex;
-  flex-direction: column; /* Вертикальне розташування елементів */
-  gap: 24px; /* Відстань між елементами */
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  display: flex; /* Використовуємо флексбокс для організації елементів */
+  gap: 24px; /* Відступи між елементами */
+  flex-wrap: wrap; /* Перенос елементів на новий рядок */
+  list-style: none; /* Без маркерів списку */
+  padding: 0; /* Відсутність внутрішніх відступів */
+  margin: 0; /* Відсутність зовнішніх відступів */
 }
 
-.list-section-two {
-  width: 100%; /* Займає всю ширину */
-  padding: 0; /* Без внутрішніх відступів */
-  margin: 0; /* Без зовнішніх відступів */
-}
-
-.icon-container {
-  height: 112px;
-  background-color: #f4f4fd;
-  border-radius: 4px;
-  border: 1px solid #8e8f99;
-  margin-bottom: 8px;
-  display: none; /* Векторні іконки не відображаються */
-}
-
-.list-title {
-  font-family: Roboto;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 40px;
-  letter-spacing: 2%;
-  text-align: center;
-}
-
-.list-paragraph {
-  font-family: Roboto;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 2%;
-  text-align: center;
-  margin: 0;
-}
-
-/* Tablet */
-@media (min-width: 768px) {
-  .container {
-    width: 736px;
-  }
-
+/* Мобільна версія */
+@media (max-width: 767px) {
   .team-list {
-    flex-direction: row; /* Горизонтальне розташування */
-    flex-wrap: wrap;
+    flex-direction: column; /* Список в один стовпець */
+    align-items: center; /* Центрування елементів */
   }
 
   .list-section-two {
-    width: calc(50% - 16px); /* Два елементи в ряд */
-    padding: 16px;
+    width: 288px; /* Ширина елементів для мобільної версії */
   }
 
+  /* Сховати іконки для мобільної версії */
   .icon-container {
-    display: none; /* Векторні іконки не відображаються */
+    display: none; /* Сховати іконки */
   }
 
+  /* Заголовки відцентровані */
   .list-title {
-    font-family: Roboto;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 40px;
-    letter-spacing: 2%;
-    text-align: left; /* Вирівнювання по лівому краю */
+    font-size: 36px; /* Розмір шрифту для заголовка */
+    line-height: 40px; /* Висота рядка */
+    text-align: center; /* Вирівнювання по центру */
+    margin-bottom: 8px; /* Відступ знизу */
   }
 
+  /* Параграф вирівняний по лівому краю */
   .list-paragraph {
-    font-family: Roboto;
-    font-weight: 500;
-    font-size: 16px;
+    font-size: 16px; /* Розмір шрифту для параграфа */
     line-height: 24px;
     letter-spacing: 2%;
     text-align: left; /* Вирівнювання по лівому краю */
+    margin: 0; /* Відсутність відступів */
   }
 }
 
-/* Desktop */
+/* Планшетна версія */
+@media (min-width: 768px) and (max-width: 1157px) {
+  .team-list {
+    flex-direction: row; /* Розташування елементів в ряд */
+    flex-wrap: wrap; /* Перенос елементів на новий рядок */
+  }
+
+  .list-section-two {
+    width: 736px; /* Ширина елемента для планшета */
+    display: flex;
+    flex-direction: column; /* Розміщення елементів в колонку */
+    gap: 16px; /* Відстань між елементами */
+    justify-content: flex-start;
+  }
+
+  /* Сховати іконки для планшетної версії */
+  .icon-container {
+    display: none; /* Сховати іконки */
+  }
+
+  /* Заголовки для планшетної версії - два в ряд */
+  .list-title {
+    font-size: 36px; /* Розмір шрифту для заголовка */
+    line-height: 40px;
+    letter-spacing: 2%;
+    text-align: left; /* Вирівнювання по лівому краю */
+    margin-bottom: 8px; /* Відступ знизу */
+  }
+
+  .team-list {
+    flex-wrap: wrap;
+    gap: 16px; /* Відстань між елементами */
+  }
+
+  .list-section-two {
+    width: calc(50% - 12px); /* Для двох заголовків в ряд */
+  }
+
+  /* Параграфи під заголовками для планшета - без обмежень на кількість рядків */
+  .list-paragraph {
+    font-size: 16px; /* Розмір шрифту для параграфа */
+    line-height: 24px;
+    letter-spacing: 2%;
+    text-align: left; /* Вирівнювання по лівому краю */
+    margin: 0; /* Відсутність відступів */
+    white-space: normal; /* Текст має переноситись */
+    overflow: visible; /* Всі рядки повинні бути видимими */
+    text-overflow: clip; /* Без многоточий */
+  }
+}
+
+/* Іконки для десктопної версії */
 @media (min-width: 1158px) {
-  .container {
-    width: 1158px;
-  }
-
   .team-list {
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: row; /* Всі елементи в ряд */
+    gap: 24px; /* Відстань між елементами */
   }
 
   .list-section-two {
-    width: calc((100% - 72px) / 4); /* Для чотирьох елементів у ряді */
+    width: calc(25% - 18px); /* Четверта частина ширини для кожного елементу */
   }
 
   .icon-container {
-    display: flex; /* Векторні іконки відображаються на десктопі */
-  }
-
-  .list-title {
-    font-family: Roboto;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 40px;
-    letter-spacing: 2%;
-    text-align: left;
-  }
-
-  .list-paragraph {
-    font-family: Roboto;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 2%;
-    text-align: left;
+    display: flex; /* Відображення іконок на десктопі */
+    align-items: center; /* Центрування по вертикалі */
+    justify-content: center; /* Центрування по горизонталі */
+    width: 264px; /* Ширина квадратика */
+    height: 112px; /* Висота квадратика */
+    background-color: #f4f4fd; /* Колір фону */
+    border-radius: 4px; /* Закруглені кути */
+    border: 1px solid #8e8f99; /* Обводка */
+    margin-bottom: 8px; /* Відступ знизу */
   }
 }
