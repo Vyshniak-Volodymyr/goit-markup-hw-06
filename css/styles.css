@@ -58,7 +58,7 @@ button {
 
 .container {
   width: 1158px; /* Фіксована ширина контейнера */
-  max-width: 320px; /* максимальна ширина контейнера */
+
   padding: 0 16px; /* внутрішні відступи */
   margin: 0 auto; /* відцентровування */
 }
@@ -510,3 +510,7 @@ button {
     margin-bottom: 8px; /* Відступ знизу */
   }
 }
+
+/* Section №2 END */
+
+/* Section №3 */
