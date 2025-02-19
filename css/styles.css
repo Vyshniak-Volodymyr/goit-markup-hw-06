@@ -368,9 +368,11 @@ button {
     fill: var(--icon-color, #f4f4fd);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  
 
-
+ .social-link:hover,
+ .social-link:focus {
+  background-color: #404bbf; /* Змінює колір фону на темніший при наведенні або фокусуванні для .social-link */
+}
 }
 
 /* мобільне меню */
@@ -505,11 +507,9 @@ button {
 /* Десктопна версія (від 1158px і вище) */
 @media screen and (min-width: 1158px) {
   .main-section {
-    background-image: linear-gradient(
-        rgba(46, 47, 6main-section6, 0.7),
-        /* Градиєнт для фону */ rgba(46, 47, 66, 0.7) /* Градиєнт для фону */
-      ),
-      url("../images/Foto_c.jpg"); /* Фонове зображення для десктопів */
+    /* Градієнт для фону + зображення */
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url("../images/Foto_c.jpg");
     max-width: 1440px; /* Максимальна ширина секції для десктопів */
     padding-top: 188px; /* Відступ для десктопної версії */
     padding-bottom: 188px; /* Відступ для десктопної версії */
@@ -964,5 +964,5 @@ button {
  }
 }
 
-/* Section №3 ПК */
+
 
