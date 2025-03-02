@@ -645,6 +645,14 @@ button {
     padding: 32px 16px; /* Відступи зверху та знизу 32px, зліва та справа 16px */
   }
 
+  .dritter-abschnitt-tablette {
+    display: flex; /* Включення flex для правильного вирівнювання */
+    flex-wrap: wrap; /* Дозволити обгортання елементів */
+    justify-content: space-between; /* Вирівнювання між елементами по горизонталі */
+    margin-bottom: 96px; /* Відстань між нижніми елементами та низом секції */
+  }
+
+
   .drei-section {
     background-color: #f4f4fd; /* Колір фону секції */
     margin-bottom: 96px; /* Відступ знизу для секції */
