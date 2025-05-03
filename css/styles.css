@@ -312,16 +312,21 @@ button {
 
   /* Заголовок секції */
   .section-title {
-    font-family: Roboto, sans-serif; /* Шрифт заголовка */
-    font-weight: 700; /* Жирність шрифту */
-    font-size: 28px; /* Розмір шрифту */
-    line-height: 34px; /* Висота рядка */
-    letter-spacing: 0.01em; /* Інтервал між літерами */
-    color: #ffffff; /* Колір тексту */
-
-    width: 100%; /* Повна ширина */
-    max-width: 216px; /* Максимальна ширина блоку заголовка */
+    width: 216px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 24px; /* додати відстань до кнопки */
+    padding: 0; /* переконатися, що немає зайвих відступів */
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #ffffff;
   }
+  
 
   /* Кнопка дії */
   .action-button {
