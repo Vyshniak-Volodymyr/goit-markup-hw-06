@@ -281,62 +281,63 @@ button {
 /* Для мобільних пристроїв (до 767px) */
 
 @media screen and (max-width: 767px) {
+  /* Основна секція */
   .main-section {
+    /* Фонове зображення з напівпрозорим темним градієнтом для затемнення */
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
-        /* Верхній шар градієнта */ rgba(46, 47, 66, 0.7)
-          /* Нижній шар градієнта */
+        rgba(46, 47, 66, 0.7)
       ),
-      url("../images/Foto_a.jpg"); /* Фонове зображення */
-    background-repeat: no-repeat; /* Заборона повторення фону */
-    background-position: center; /* Центрування фонового зображення */
-    background-size: cover; /* Фонове зображення заповнює всю секцію */
-    max-width: 320px; /* Максимальна ширина елемента — 320 пікселів */
-    height: auto; /* Автоматична висота секції */
-    background-color: #2e2f42; /* Колір фону (резервний, якщо зображення не завантажиться) */
-    display: flex; /* Використання Flexbox для вирівнювання елементів */
-    flex-direction: column; /* Вирівнювання елементів у колонку */
-    justify-content: center; /* Центрування контенту по вертикалі */
-    align-items: center; /* Центрування контенту по горизонталі */
+      url("../images/Foto_a.jpg");
+
+    background-repeat: no-repeat; /* Заборонити повторення зображення */
+    background-position: center; /* Центрувати зображення */
+    background-size: cover; /* Масштабувати зображення на всю секцію */
+    background-color: #2e2f42; /* Резервний колір фону (на випадок, якщо зображення не завантажиться) */
+
+    width: 100%; /* Займати всю доступну ширину */
+    max-width: 320px; /* Обмежити ширину відповідно до мобільного макету */
+    min-height: 432px; /* Мінімальна висота секції за макетом (Figma) */
+
+    display: flex; /* Використання flexbox для розташування контенту */
+    flex-direction: column; /* Розміщення елементів вертикально */
+    justify-content: center; /* Вертикальне центровання вмісту */
+    align-items: center; /* Горизонтальне центровання вмісту */
     text-align: center; /* Вирівнювання тексту по центру */
+
     margin: 0 auto; /* Центрування секції по горизонталі */
-    padding-top: 72px; /* Внутрішній відступ зверху секції */
-    padding-bottom: 72px; /* Внутрішній відступ знизу секції */
+    padding-top: 72px; /* Внутрішній відступ зверху */
+    padding-bottom: 72px; /* Внутрішній відступ знизу */
   }
 
+  /* Заголовок секції */
   .section-title {
     font-family: Roboto, sans-serif; /* Шрифт заголовка */
-    font-weight: 700; /* Товщина шрифту */
-    font-size: 28px; /* Розмір шрифту для мобільних пристроїв */
+    font-weight: 700; /* Жирність шрифту */
+    font-size: 28px; /* Розмір шрифту */
     line-height: 34px; /* Висота рядка */
-    letter-spacing: 1%; /* Інтервал між літерами */
+    letter-spacing: 0.01em; /* Інтервал між літерами */
     color: #ffffff; /* Колір тексту */
-    width: 90%; /* Ширина текстового блоку, адаптована для мобільних пристроїв */
-    max-width: 170px; /* Максимальна ширина текстового блоку */
-    height: auto; /* Автоматична висота текстового блоку */
-    display: flex; /* Використання Flexbox */
-    flex-direction: column; /* Вирівнювання тексту у колонку */
-    justify-content: center; /* Центрування тексту по вертикалі */
-    text-align: center; /* Вирівнювання тексту по центру */
-    margin-top: 72px; /* Відстань від верху тексту до верху секції */
-    margin-bottom: 20px; /* Відстань між заголовком і кнопкою */
+
+    width: 100%; /* Повна ширина */
+    max-width: 216px; /* Максимальна ширина блоку заголовка */
   }
 
-
+  /* Кнопка дії */
   .action-button {
-    width: 169px; /* Ширина кнопки */
+    width: 169px; /* Згідно макету */
     height: 56px; /* Висота кнопки */
-    background-color: #4d5ae5; /* Колір фону кнопки */
-    color: #fff; /* Колір тексту кнопки */
-    font-size: 16px; /* Розмір шрифту кнопки */
-    font-weight: 500; /* Товщина шрифту кнопки */
-    line-height: 24px; /* Висота рядка тексту в кнопці */
-    border-radius: 4px; /* Заокруглення кутів кнопки */
+    background-color: #4d5ae5; /* Основний фон */
+    color: #fff; /* Колір тексту */
+    font-size: 16px; /* Розмір шрифту */
+    font-weight: 500; /* Напівжирний текст */
+    line-height: 24px; /* Висота рядка */
+    border-radius: 4px; /* Заокруглені кути */
     border: none; /* Без рамки */
-    cursor: pointer; /* Зміна курсору на "руку" при наведенні */
-    text-align: center; /* Вирівнювання тексту по центру */
-    transition: background-color 250ms ease; /* Анімація зміни кольору при наведенні */
-    margin-bottom: 0; /* Необхідно видалити margin-bottom у кнопки */
+    cursor: pointer; /* Курсор при наведенні */
+    text-align: center; /* Центрування тексту */
+    transition: background-color 250ms ease; /* Плавна анімація при наведенні */
+    margin-bottom: 0; /* Відсутність нижнього відступу */
   }
 
   .action-button:hover {
