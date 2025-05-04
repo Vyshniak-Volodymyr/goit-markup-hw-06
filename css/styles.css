@@ -299,7 +299,7 @@ button {
     max-width: 320px; /* Обмежити ширину відповідно до мобільного макету */
     min-height: 432px; /* Мінімальна висота секції за макетом (Figma) */
 
-    display: flex; /* Використання flexbox для розташування контенту */
+   /* display: flex; * Використання flexbox для розташування контенту */
     flex-direction: column; /* Розміщення елементів вертикально */
     justify-content: center; /* Вертикальне центровання вмісту */
     align-items: center; /* Горизонтальне центровання вмісту */
@@ -343,6 +343,7 @@ button {
     text-align: center; /* Центрування тексту */
     transition: background-color 250ms ease; /* Плавна анімація при наведенні */
     margin-bottom: 0; /* Відсутність нижнього відступу */
+    margin-top: 60px; /* або більше, залежно від бажаної позиції */
   }
 
   .action-button:hover {
