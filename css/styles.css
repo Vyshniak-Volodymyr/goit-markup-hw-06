@@ -295,11 +295,11 @@ button {
     background-size: cover; /* Масштабувати зображення на всю секцію */
     background-color: #2e2f42; /* Резервний колір фону (на випадок, якщо зображення не завантажиться) */
 
-    width: 100%; /* Займати всю доступну ширину */
+    /* width: 100%;  Займати всю доступну ширину */
     max-width: 320px; /* Обмежити ширину відповідно до мобільного макету */
     min-height: 432px; /* Мінімальна висота секції за макетом (Figma) */
 
-   /* display: flex; * Використання flexbox для розташування контенту */
+    /* display: flex; * Використання flexbox для розташування контенту */
     flex-direction: column; /* Розміщення елементів вертикально */
     justify-content: center; /* Вертикальне центровання вмісту */
     align-items: center; /* Горизонтальне центровання вмісту */
@@ -326,7 +326,6 @@ button {
     text-align: center;
     color: #ffffff;
   }
-  
 
   /* Кнопка дії */
   .action-button {
@@ -352,7 +351,7 @@ button {
   /* Секція номер два. Мобілка. */
 
   .two-section {
-    padding: 96px 0; /* Відступи зверху та знизу */
+    padding: 112px 0; /* Відступи зверху та знизу */
   }
 
   .team-list {
@@ -525,15 +524,22 @@ button {
           /* Той самий колір для нижньої частини градієнта */
       ),
       url("../images/Foto_b.jpg"); /* Встановлює зображення фону після градієнта */
+
+    width: 768px;
+    height: 436px;
+
+    background-position: center;
+
     background-repeat: no-repeat; /* Запобігає повторенню фону */
     background-position: center; /* Центрує фон на елементі */
     background-size: cover; /* Масштабує фон, щоб покрити весь елемент */
-    max-width: 1440px; /* Встановлює максимальну ширину секції */
+    max-width: 1157px; /* Встановлює максимальну ширину секції */
     background-color: #2e2f42; /* Встановлює колір фону на випадок, якщо зображення не завантажиться */
     text-align: center; /* Центрує текст всередині секції */
-    display: flex; /* Використовує flexbox для вирівнювання елементів */
-    align-items: center; /* Вертикальне вирівнювання елементів по центру */
-    justify-content: center; /* Горизонтальне вирівнювання елементів по центру */
+
+    display: flex; /* активуємо flex-контейнер */
+    align-items: center; /* центрування по вертикалі */
+
     margin: 0 auto; /* Центрує секцію по горизонталі */
     padding-top: 180px; /* Встановлює відступ зверху на 180 пікселів */
     padding-bottom: 180px; /* Встановлює відступ знизу на 180 пікселів */
@@ -548,6 +554,7 @@ button {
     color: #ffffff; /* Колір тексту */
     margin: 0 auto 48px; /* Центрування та відступ знизу */
     text-align: center; /* Центрування тексту */
+    margin-top: 112px; /* відстань до верху */
   }
 
   .action-button {
@@ -568,6 +575,7 @@ button {
     color: #ffffff; /* Колір тексту */
     text-decoration: none; /* Видалення підкреслення */
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Плавний перехід кольору */
+    margin-bottom: 112px; /* відстань до низу */
   }
 
   .action-button:hover {
