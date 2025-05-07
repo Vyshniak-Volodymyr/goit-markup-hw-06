@@ -643,175 +643,113 @@ button {
 
   /* Третя секція. Планшет */
 
-  .team-list-drei {
-    display: flex; /* Включення flex для правильного вирівнювання */
-    flex-wrap: wrap; /* Дозволити обгортання елементів */
-    justify-content: space-between; /* Вирівнювання між елементами по горизонталі */
-  }
-
-  .team-info {
-    padding: 32px 16px; /* Відступи зверху та знизу 32px, зліва та справа 16px */
-  }
-
-  .dritter-abschnitt-tablette {
-    display: flex; /* Включення flex для правильного вирівнювання */
-    flex-wrap: wrap; /* Дозволити обгортання елементів */
-    justify-content: space-between; /* Вирівнювання між елементами по горизонталі */
-    margin-bottom: 96px; /* Відстань між нижніми елементами та низом секції */
-  }
-
+  /* Секція загалом */
   .drei-section {
-    background-color: #f4f4fd; /* Колір фону секції */
-    margin-bottom: 96px; /* Відступ знизу для секції */
-    padding: 40px 0; /* Відступи зверху і знизу для секції */
+    background-color: #f4f4fd; /* Світлий фон для секції */
+    padding-top: 96px; /* Відступ зверху до заголовка */
+    padding-bottom: 96px; /* Відступ знизу від останнього ряду карток */
   }
 
-  .drei-list-section:first-child .drei-image-container {
-    border-top-left-radius: 0px; /* Верхній лівий */
-    border-top-right-radius: 0px; /* Верхній правий */
-    border-bottom-right-radius: 4px; /* Нижній правий */
-    border-bottom-left-radius: 4px; /* Нижній лівий */
-  }
-
-  .drei-list-section {
-    flex-basis: calc((100% - 72px) / 4); /* Ширина елементів списку */
-    border-radius: 0px 0px 4px 4px; /* Закруглення нижніх кутів */
-    background-color: #ffffff; /* Білий фон */
-    gap: 24px;
-  }
-
-  /* Дефолтний клас container для стандартизації розмірів */
-  .container {
-    width: 1158px; /* Фіксована ширина контейнера */
-    margin: 0 auto; /* Центрування по горизонталі */
-    padding: 0 15px; /* Внутрішні відступи по горизонталі */
-  }
-
-  /* Дефолтний клас container для стандартизації розмірів */
-  .drei-container {
-    width: 1158px; /* Встановлює фіксовану ширину для контенту */
-    margin: 0 auto; /* Центрування контейнера на сторінці */
-    padding: 0 15px; /* Внутрішні відступи з обох боків */
-  }
-
+  /* Заголовок секції */
   .drei-team-title {
-    margin-top: 0; /* Верхній відступ обнулений */
-    margin-bottom: 72px; /* Нижній відступ 72px */
-    font-family: "Roboto", sans-serif; /* Шрифт Roboto, запасний sans-serif */
-    font-size: 36px; /* Розмір шрифту 36px */
-    font-weight: 700; /* Жирність шрифту (700 — напівжирний) */
-    line-height: 40px; /* Висота рядка 40px для гармонійного розташування тексту */
-    letter-spacing: 0.02em; /* Міжлітерний інтервал (трішки розширений) */
-    text-align: center; /* Текст вирівняно по центру */
-    text-underline-position: from-font; /* Позиція підкреслення відповідно до шрифту */
-    text-decoration-skip-ink: none; /* Підкреслення не пропускає символи (наприклад, літери з нижніми елементами) */
+    margin-top: 0; /* Обнуляємо верхній відступ */
+    margin-bottom: 72px; /* Відстань до першого ряду карток — згідно макету */
+    font-family: "Roboto", sans-serif; /* Шрифт заголовка */
+    font-size: 36px; /* Розмір шрифту */
+    font-weight: 700; /* Жирний шрифт */
+    line-height: 40px; /* Висота рядка */
+    letter-spacing: 0.02em; /* Невелике розширення між літерами */
+    text-align: center; /* Центрування заголовка */
   }
 
-  .drei-team-item {
-    margin-right: 24px; /* Встановлюємо відступ між елементами */
+  /* Контейнер зі списком карток команди */
+  .team-list-drei {
+    display: flex; /* Використання флексбокса для побудови сітки */
+    flex-wrap: wrap; /* Дозволяємо перенос карток на новий ряд */
+    justify-content: center; /* Центруємо ряди карток по горизонталі */
+    gap: 64px 24px; /* Вертикальний інтервал: 64px, горизонтальний: 24px */
   }
 
-  .drei-team-item:last-child {
-    margin-right: 0; /* Обнуляємо відступ для останнього елемента */
+  /* Одна картка учасника */
+  .drei-list-section {
+    width: 264px; /* Фіксована ширина картки згідно з макетом */
+    height: 428px; /* Фіксована висота — макетна */
+    background-color: #ffffff; /* Білий фон картки */
+    border-radius: 0 0 4px 4px; /* Закруглення лише нижніх кутів */
+    box-shadow:                /* Тінь, що відповідає макету */ 0px 2px 1px
+        rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   }
 
-  .drei-image-container {
-    text-align: center; /* Центрує вміст всередині контейнера по горизонталі */
+  /* Зображення в картці */
+  .block-image {
+    width: 100%; /* Займає всю ширину контейнера */
+    height: auto; /* Зберігає пропорції зображення */
+    display: block; /* Видаляє нижній відступ через inline default */
   }
 
-  .drei-block-image {
-    max-width: 100%; /* Зробити зображення адаптивним, щоб воно не виходило за межі контейнера */
-    height: auto; /* Зберігає пропорції зображення при зміні ширини */
+  /* Контейнер з ім’ям, посадою і соцмережами */
+  .team-info {
+    padding: 32px 0; /* Верхній і нижній падінги — без бокових */
+    text-align: center; /* Центрування тексту по горизонталі */
   }
 
+  /* Ім’я члена команди */
   .drei-team-name {
-    /* Стиль заголовка H3 */
-    font-family: Roboto; /* Шрифт: Roboto */
-    font-size: 20px; /* Розмір шрифту: 20px */
-    font-weight: 500; /* Напівжирний шрифт */
-    line-height: 24px; /* Висота рядка: 24px */
-    letter-spacing: 0.02em; /* Міжлітерний інтервал: 0.02em */
-    text-align: center; /* Вирівнювання тексту по центру */
-    text-underline-position: from-font; /* Позиція підкреслення залежить від шрифту */
-    text-decoration-skip-ink: none; /* Підкреслення не пропускає чорнило */
-    margin-bottom: 8px; /* Нижній відступ: 8px */
-    margin-top: 0; /* Верхній відступ: 0 */
-  }
-
-  .drei-team-role {
-    font-family: Roboto; /* Шрифт Roboto */
-    font-size: 1em; /* Адаптивний розмір шрифту */
-    font-weight: 400; /* Нормальна товщина шрифту */
-    line-height: 24px; /* Висота рядка 24px */
+    margin: 0 0 8px 0; /* Нижній відступ — між ім’ям і посадою */
+    font-size: 20px; /* Розмір шрифту */
+    font-weight: 500; /* Напівжирний */
+    line-height: 24px; /* Висота рядка */
     letter-spacing: 0.02em; /* Міжлітерний інтервал */
-    text-align: center; /* Вирівнювання тексту по центру */
-    text-underline-position: from-font; /* Позиція підкреслення залежить від шрифту */
-    text-decoration-skip-ink: none; /* Підкреслення не пропускає чорнило */
-    color: gray; /* Сірий колір тексту */
-    margin-top: 0; /* Видаляє верхній відступ */
-    margin-bottom: 8px; /* Відступ знизу для відокремлення елементів */
   }
 
-  /* Список соцмереж */
+  /* Посада члена команди */
+  .drei-team-role {
+    margin: 0 0 8px 0; /* Нижній відступ — до соцмереж */
+    font-size: 16px; /* Розмір шрифту */
+    font-weight: 400; /* Звичайна товщина */
+    line-height: 24px; /* Висота рядка */
+    letter-spacing: 0.02em; /* Інтервал між літерами */
+    color: gray; /* Сірий колір */
+  }
+
+  /* Список соціальних іконок */
   .social-list {
-    list-style: none; /* Видаляє стандартні маркери списку */
-    padding: 0; /* Видаляє внутрішні відступи списку */
-    margin: 0; /* Видаляє зовнішні відступи списку */
-    display: flex; /* Задає флексбокс-контейнер для елементів списку */
-    justify-content: center; /* Вирівнює елементи по центру по горизонталі */
-    gap: 24px; /* Відстань між елементами списку */
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Анімація зміни кольору фону з плавним переходом */
+    list-style: none; /* Прибираємо маркери списку */
+    margin: 0; /* Обнуляємо зовнішні відступи */
+    padding: 0; /* Обнуляємо внутрішні відступи */
+    display: flex; /* Флекс-контейнер для рівномірного розподілу */
+    justify-content: center; /* Центрування іконок */
+    gap: 24px; /* Відстань між іконками */
   }
 
-  /* Список соцмереж */
-  .social-list-footer {
-    list-style: none; /* Видаляє стандартні маркери списку */
-    padding: 0; /* Видаляє внутрішні відступи списку */
-    margin: 0; /* Видаляє зовнішні відступи списку */
-    display: flex; /* Задає флексбокс-контейнер для елементів списку */
-    justify-content: center; /* Вирівнює елементи по центру по горизонталі */
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Анімація зміни кольору фону з плавним переходом */
-    gap: 16px;
-  }
-
-  /* Елемент списку соцмереж */
+  /* Один елемент у списку соцмереж */
   .social-item {
-    width: 40px; /* Ширина елемента: 40 пікселів */
-    height: 40px; /* Висота елемента: 40 пікселів */
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Плавний перехід для зміни кольору фону */
-    display: inline-block; /* Відображення елемента як inline-block */
+    width: 40px; /* Ширина іконки */
+    height: 40px; /* Висота іконки */
   }
 
-  /* Посилання в соцмережах */
+  /* Посилання-іконка соцмережі */
   .social-link {
-    display: flex; /* Використовує flexbox для вирівнювання елементів */
-    align-items: center; /* Вертикальне вирівнювання по центру */
-    justify-content: center; /* Горизонтальне вирівнювання по центру */
-    width: 100%; /* Ширина 100% від батьківського контейнера */
-    height: 100%; /* Висота 100% від батьківського контейнера */
-    border-radius: 50%; /* Робить елемент круглим */
-    gap: 24px; /* Відступ між елементами */
-    background-color: var(--link-bg, #4d5ae5); /* Колір фону */
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Плавна зміна кольору */
+    display: flex; /* Центрування вмісту */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5; /* Базовий синій фон */
+    border-radius: 50%; /* Робить іконку круглою */
+    transition: background-color 250ms ease; /* Плавна анімація зміни фону */
   }
 
-  /* Ефект при наведенні або фокусуванні */
+  /* Ховер/фокус ефект для іконки */
   .social-link:hover,
   .social-link:focus {
-    background-color: #404bbf; /* Змінює колір фону на темніший при наведенні або фокусуванні */
+    background-color: #404bbf; /* Темніший синій при наведенні */
   }
 
-  /* Іконка соцмереж */
+  /* Власне SVG-іконка */
   .social-icon {
-    fill: var(--icon-color, #f4f4fd);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  /* Тінь для першого елемента */
-  .first-team-member {
-    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-    border-radius: 0px 0px 4px 4px;
+    fill: #f4f4fd; /* Колір іконки — світлий */
   }
 }
 
