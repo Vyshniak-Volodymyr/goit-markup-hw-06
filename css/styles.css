@@ -514,6 +514,129 @@ button {
   .social-icon {
     fill: var(--icon-color, #f4f4fd); /* Колір іконки з можливістю зміни */
   }
+
+  /* Секція номер чотири. */
+
+  /* Контейнер мобільної секції */
+  .container {
+    width: 100%; /* Контейнер займає всю ширину екрана */
+    padding-left: 16px; /* Внутрішній лівий відступ */
+    padding-right: 16px; /* Внутрішній правий відступ */
+    margin: 0 auto; /* Центрування */
+  }
+
+  /* Секція портфоліо */
+  .team-section-portfolio {
+    background-color: #fdfdfd; /* Світлий фон */
+    padding-top: 96px; /* Верхній відступ секції */
+    padding-bottom: 96px; /* Нижній відступ секції */
+  }
+
+  /* Заголовок секції */
+  .team-title-vier {
+    font-family: "Roboto", sans-serif; /* Шрифт */
+    font-size: 28px; /* Зменшений розмір для мобільного */
+    font-weight: 700; /* Товщина шрифту */
+    line-height: 1.2; /* Міжрядковий інтервал */
+    letter-spacing: 0.02em; /* Міжлітерний інтервал */
+    text-align: center; /* Центрування */
+    margin-top: 0; /* Без верхнього відступу */
+    margin-bottom: 72px; /* Відступ знизу до першої картки */
+    color: #333; /* Колір заголовка */
+    padding-left: 35px; /* Відступи ліворуч */
+    padding-right: 35px; /* Відступи праворуч */
+  }
+
+  /* Список карток */
+  .fourth-list {
+    display: flex; /* Використання flexbox */
+    flex-direction: column; /* Вертикальне розміщення карток */
+    gap: 48px; /* Відстань між картками */
+    padding: 0; /* Обнулення падінгів */
+    margin: 0; /* Обнулення маргінів */
+    list-style: none; /* Видалення маркерів списку */
+  }
+
+  /* Кожна картка */
+  .team-item {
+    width: 100%; /* Картка на всю ширину контейнера */
+    position: relative; /* Для позиціонування дочірніх елементів */
+    overflow: hidden; /* Обрізання вмісту за межами */
+    transition: box-shadow 0.3s ease; /* Плавна анімація тіні */
+  }
+
+  /* Ховер-ефект тіні */
+  .team-item:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  }
+
+  /* Контейнер зображення */
+  .image-container {
+    position: relative; /* Відносне позиціонування */
+    overflow: hidden; /* Обрізання вмісту */
+  }
+
+  /* Зображення в картці */
+  .block-image {
+    width: 100%; /* Повна ширина батьківського блоку */
+    height: auto; /* Автоматична висота */
+    display: block; /* Блочний елемент */
+  }
+
+  /* Прихований опис, який з’являється при наведенні */
+  .description {
+    position: absolute; /* Абсолютне позиціонування */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 40px 32px;
+    background-color: #4d5ae5;
+    color: #f4f4fd;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    transform: translateY(100%); /* Початкове положення поза межами */
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Плавне з’явлення */
+  }
+
+  /* Анімація появи опису */
+  .team-item:hover .description {
+    transform: translateY(0); /* Виводить опис на екран */
+  }
+
+  /* Контейнер тексту під зображенням */
+  .addition {
+    width: 100%; /* Повна ширина */
+    padding: 32px 16px; /* Внутрішні відступи */
+    border-left: 1px solid rgba(231, 233, 252, 1);
+    border-right: 1px solid rgba(231, 233, 252, 1);
+    border-bottom: 1px solid rgba(231, 233, 252, 1);
+    color: #922c2c;
+  }
+
+  /* Назва проєкту */
+  .team-name {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    margin: 0 0 8px 0;
+    color: #2e2f42;
+  }
+
+  /* Тип проєкту */
+  .team-role {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+  }
 }
 
 /* Для планшетів і малих екранів (768px - 1157px) */
@@ -750,6 +873,141 @@ button {
   /* Власне SVG-іконка */
   .social-icon {
     fill: #f4f4fd; /* Колір іконки — світлий */
+  }
+
+  /* Стиль для ролі члена команди */
+  .team-role {
+    margin: 0; /* Обнуляє всі зовнішні відступи */
+    padding: 0; /* Обнуляє всі внутрішні відступи */
+    font-family: "Roboto", sans-serif; /* Шрифт для тексту */
+    font-weight: 400; /* Нормальна жирність */
+    font-size: 16px; /* Розмір шрифту */
+    line-height: 1.5; /* Висота рядка */
+    letter-spacing: 0.02em; /* Відстань між літерами */
+    color: #0e0000; /* Колір тексту */
+    transition: transform 0.3s ease; /* Плавний перехід */
+  }
+
+  /* Планшет. Секція №4 */
+
+  /* Контейнер всієї секції (ширина, відступи з боків) */
+  .container {
+    width: 768px; /* Фіксована ширина контейнера для планшетів */
+    margin: 0 auto; /* Центрування по горизонталі */
+    padding-left: 16px; /* Відступ ліворуч */
+    padding-right: 16px; /* Відступ праворуч */
+  }
+
+  /* Секція портфоліо */
+  .team-section-portfolio {
+    background-color: #fdfdfd; /* Світлий фон */
+    padding-top: 96px; /* Верхній відступ */
+    padding-bottom: 96px; /* Нижній відступ */
+  }
+
+  /* Заголовок секції */
+  .team-title-vier {
+    font-family: "Roboto", sans-serif; /* Шрифт */
+    font-size: 36px; /* Розмір шрифту */
+    font-weight: 700; /* Товщина шрифту */
+    line-height: 40px; /* Міжрядковий інтервал */
+    letter-spacing: 0.02em; /* Міжлітерний інтервал */
+    text-align: center; /* Центрування */
+    color: #333; /* Колір тексту */
+    margin-top: 0; /* Без відступу зверху */
+    margin-bottom: 72px; /* Відступ знизу до карток */
+  }
+
+  /* Список карток */
+  .fourth-list {
+    display: flex; /* Flex-контейнер */
+    flex-wrap: wrap; /* Перенос елементів */
+    column-gap: 24px; /* Горизонтальний відступ між колонками */
+    row-gap: 64px; /* Вертикальний відступ між рядами */
+    padding: 0; /* Обнулення внутрішніх відступів */
+    margin: 0; /* Обнулення зовнішніх відступів */
+    list-style: none; /* Без маркерів */
+  }
+
+  /* Кожна картка */
+  .team-item {
+    width: calc((100% - 24px) / 2); /* 2 картки в ряд, з урахуванням проміжку */
+    position: relative; /* Для позиціонування тексту при ховері */
+    overflow: hidden; /* Обрізає вміст, що виходить за межі */
+    transition: box-shadow 0.3s ease; /* Плавний ефект тіні */
+  }
+
+  /* Ефект тіні при наведенні */
+  .team-item:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  }
+
+  /* Контейнер зображення */
+  .image-container {
+    position: relative; /* Встановлення відносного позиціонування */
+    overflow: hidden; /* Ховає все, що виходить за межі */
+  }
+
+  /* Зображення в картці */
+  .block-image {
+    width: 100%; /* Ширина 100% від блоку */
+    height: auto; /* Автоматична висота */
+    display: block; /* Блочний елемент */
+  }
+
+  /* Прихований опис, який з’являється при наведенні */
+  .description {
+    position: absolute; /* Абсолютне позиціонування */
+    top: 0; /* Вирівнювання зверху */
+    left: 0; /* Вирівнювання зліва */
+    width: 100%; /* Повна ширина */
+    height: 100%; /* Повна висота */
+    padding: 40px 32px; /* Внутрішній відступ */
+    background-color: #4d5ae5; /* Синій фон */
+    color: #f4f4fd; /* Світлий текст */
+    font-size: 16px; /* Розмір тексту */
+    line-height: 1.5; /* Міжрядковий інтервал */
+    letter-spacing: 0.02em; /* Міжлітерний інтервал */
+    transform: translateY(100%); /* Зсунений вниз */
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Плавне з’явлення */
+  }
+
+  /* Вивід опису при ховері */
+  .team-item:hover .description {
+    transform: translateY(0); /* Повернення на місце */
+  }
+
+  /* Контейнер нижньої частини картки */
+  .addition {
+    width: 100%; /* Повна ширина */
+    padding: 32px 16px; /* Внутрішні відступи */
+    border-left: 1px solid rgba(231, 233, 252, 1); /* Ліва рамка */
+    border-right: 1px solid rgba(231, 233, 252, 1); /* Права рамка */
+    border-bottom: 1px solid rgba(231, 233, 252, 1); /* Нижня рамка */
+    color: #922c2c; /* Колір тексту */
+  }
+
+  /* Назва проєкту */
+  .team-name {
+    font-family: "Roboto", sans-serif; /* Шрифт */
+    font-weight: 500; /* Напівжирний */
+    font-size: 20px; /* Розмір тексту */
+    line-height: 1.2; /* Висота рядка */
+    margin: 0 0 8px 0; /* Відступ знизу */
+    color: #2e2f42; /* Колір назви */
+  }
+
+  /* Тип проєкту */
+  .team-role {
+    margin: 0; /* Без зовнішнього відступу */
+    padding: 0; /* Без внутрішнього відступу */
+    font-family: "Roboto", sans-serif; /* Шрифт */
+    font-weight: 400; /* Стандартна товщина */
+    font-size: 16px; /* Розмір тексту */
+    line-height: 1.5; /* Висота рядка */
+    letter-spacing: 0.02em; /* Відстань між літерами */
+    color: #434455; /* Сірий текст */
   }
 }
 
@@ -1129,4 +1387,134 @@ button {
   }
 
   /* drei END. ПК. */
+
+  /* Секція №4. */
+  /* Четверта секція (портфоліо) */
+  .team-section-portfolio {
+    background-color: #fdfdfd; /* Встановлює світлий фон для секції портфоліо */
+    padding-top: 120px; /* Встановлює відступ зверху на 120 пікселів */
+    padding-bottom: 120px; /* Встановлює відступ знизу на 120 пікселів */
+  }
+
+  /* Дефолтний клас container для стандартизації розмірів */
+  .container {
+    width: 1158px; /* Фіксована ширина контейнера */
+    margin: 0 auto; /* Центрування по горизонталі */
+    padding: 0 15px; /* Внутрішні відступи по горизонталі */
+  }
+
+  .team-title-vier {
+    font-family: "Roboto", sans-serif; /* Шрифт Roboto */
+    font-size: 36px; /* Розмір шрифту заголовка */
+    font-weight: 700; /* Жирний текст (700 — найвища жирність) */
+    line-height: 40px; /* Висота рядка */
+    letter-spacing: 0.02em; /* Міжлітерний інтервал */
+    text-align: center; /* Вирівнювання тексту по центру */
+    text-underline-position: from-font; /* Позиція підкреслення */
+    text-decoration-skip-ink: none; /* Не пропускати підкреслення через символи */
+    margin-top: 0; /* Видаляє верхній відступ */
+    margin-bottom: 72px; /* Відступ між заголовком і списком */
+    color: #333; /* Колір тексту */
+  }
+
+  /* Список елементів */
+  ul.team-title-vier {
+    display: flex; /* Використання Flexbox */
+    flex-wrap: wrap; /* Перенос елементів */
+    column-gap: 24px; /* Горизонтальні відступи між елементами */
+    row-gap: 48px; /* Вертикальні відступи між рядками */
+    padding: 0; /* Скидання відступів списку */
+    margin: 0; /* Скидання полів списку */
+    list-style: none; /* Видалення маркерів списку */
+  }
+
+  .fourth-list {
+    display: flex; /* Встановлює Flexbox для вирівнювання елементів */
+    flex-wrap: wrap; /* Дозволяє елементам переноситися на новий рядок */
+    margin: 0; /* Забираємо зовнішні відступи */
+    padding: 0; /* Обнулює внутрішні відступи */
+    list-style-type: none; /* Видаляє маркери списку */
+    column-gap: 24px;
+    row-gap: 48px;
+  }
+
+  /* Список елементів */
+  ul.team-title-vier {
+    display: flex; /* Використання Flexbox */
+    flex-wrap: wrap; /* Перенос елементів */
+    column-gap: 24px; /* Горизонтальні відступи між елементами */
+    row-gap: 48px; /* Вертикальні відступи між рядками */
+    padding: 0; /* Скидання відступів списку */
+    margin: 0; /* Скидання полів списку */
+    list-style: none; /* Видалення маркерів списку */
+  }
+
+  /* Загальний стиль для пунктів списку */
+  .team-item {
+    width: calc(
+      (100% - 48px) / 3
+    ); /* Встановлюємо ширину елемента як одну третину від ширини контейнера, з урахуванням відступів */
+    position: relative; /* Встановлюємо відносне позиціонування для того, щоб додаткові вкладені елементи могли позиціонуватися відносно цього блоку */
+    overflow: hidden; /* Приховуємо будь-який вміст, що виходить за межі елемента */
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Плавний перехід для властивості box-shadow із кривою Безьє */
+    transition: box-shadow 0.3s ease; /* Плавний перехід для властивості box-shadow із простою функцією ease */
+  }
+
+  /* Тінь при ховері */
+  .team-item:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+
+  /* Зображення - блочний контейнер */
+  .image-container {
+    position: relative; /* Встановлюємо відносне позиціонування */
+    overflow: hidden; /* Приховуємо вміст за межами контейнера */
+  }
+
+  .description {
+    position: absolute; /* Абсолютне позиціонування відносно батьківського контейнера */
+    top: 0; /* Прив'язуємо до верхнього краю */
+    left: 0; /* Прив'язуємо до лівого краю */
+    width: 100%; /* Ширина блоку */
+    height: 100%; /* Висота блоку */
+    padding: 40px 32px; /* Відступи всередині блоку */
+    background-color: #4d5ae5; /* Синій фон */
+    color: var(--text-color, #f4f4fd); /* Колір тексту */
+    font-size: 16px; /* Розмір шрифту */
+    line-height: 1.5; /* Висота рядка */
+    letter-spacing: 0.02em; /* Відстань між літерами */
+    transform: translateY(100%); /* Початкове зміщення вниз */
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Анімація */
+  }
+
+  /* Ефект при наведенні */
+  .team-item:hover .description {
+    transform: translateY(0); /* Переміщуємо текст у видиму область */
+  }
+
+  /* Стиль для тексту в контейнері .addition */
+  .addition {
+    /* bottom: 0;  Відступ від нижнього краю контейнера */
+    /* left: 0;  Відступ від лівого краю контейнера */
+    width: 100%; /* Ширина елемента займає 100% ширини контейнера */
+    color: #922c2c; /* Білий колір тексту у форматі HEX */
+    padding: 32px 16px; /* Внутрішній відступ (padding) 10 пікселів з усіх боків */
+    border-left: 1px solid rgb(231, 233, 252, 1);
+    border-right: 1px solid rgb(231, 233, 252, 1);
+    border-bottom: 1px solid rgb(231, 233, 252, 1);
+  }
+
+  .team-role {
+    margin: 0; /* Обнуляє всі зовнішні відступи */
+    padding: 0; /* Обнуляє всі внутрішні відступи */
+    font-family: "Roboto", sans-serif; /* Шрифт для тексту */
+    font-weight: 400; /* Нормальна жирність */
+    font-size: 16px; /* Розмір шрифту */
+    line-height: 1.5; /* Висота рядка */
+    letter-spacing: 0.02em; /* Відстань між літерами */
+    color: #434455; /* Колір тексту */
+    transition: transform 0.3s ease; /* Плавний перехід */
+  }
 }
