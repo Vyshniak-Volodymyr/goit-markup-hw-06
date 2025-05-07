@@ -348,21 +348,30 @@ button {
   .action-button:hover {
     background-color: #404bbf; /* Колір кнопки при наведенні */
   }
+
   /* Секція номер два. Мобілка. */
 
   .two-section {
     padding: 112px 0; /* Відступи зверху та знизу */
   }
 
-  .team-list {
-    display: flex; /* Включення flex для правильного вирівнювання */
-    flex-direction: column; /* Список в один стовпець */
-    align-items: center; /* Центрування елементів */
+  .team-list-dva {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
   }
 
   .list-section-two {
-    width: 288px; /* Ширина елементів для мобільної версії */
-    margin-bottom: 24px; /* Відступ між блоками (знизу) */
+    width: 288px;
+    margin-bottom: 72px; /* Встановлюємо потрібний відступ згідно макету */
+  }
+
+  /* Щоб останній елемент не мав зайвого відступу */
+  .list-section-two:last-child {
+    margin-bottom: 0;
   }
 
   .icon-container {
@@ -405,7 +414,7 @@ button {
   }
 
   /* Список команди */
-  .team-list {
+  .team-list-drei {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -586,68 +595,67 @@ button {
   .action-button:focus {
     background-color: #404bbf; /* Колір фону при наведенні або фокусі */
   }
-  /* Секція номер ДВА. Планшет. */
+
+  /* Секція номер ДВА. Планшет */
   .two-section {
-    padding: 96px 0; /* Відступи зверху та знизу */
+    padding: 96px 0; /* Відступ зверху і знизу секції */
   }
 
-  .team-list {
+  .team-list-dva {
+    display: flex; /* Використання flexbox для розміщення елементів */
+    flex-wrap: wrap; /* Дозволити перенос елементів на новий рядок */
+    justify-content: space-between; /* Рівномірний розподіл між колонками */
+    column-gap: 24px; /* Відстань між колонками (згідно макету) */
+    row-gap: 72px; /* Відстань між рядками (згідно макету) */
+  }
+
+  .list-section-two {
+    width: calc(
+      (100% - 24px) / 2
+    ); /* Дві колонки з урахуванням проміжку 24px */
+    margin: 0; /* Прибрано зовнішні відступи */
+    padding: 0; /* Вилучено внутрішні падінги, як вимагає макет */
+    box-sizing: border-box; /* Падінги та бордери враховуються у ширині */
+    position: relative; /* Потрібне для позиціонування псевдоелементів */
+  }
+
+  /* Псевдоелемент вимкнений, оскільки фон не використовується */
+  .list-section-two::before {
+    content: "";
+    display: none;
+  }
+
+  .icon-container {
+    display: none; /* Іконки приховані, як вказано */
+  }
+
+  .list-title {
+    font-family: "Roboto", sans-serif; /* Стиль шрифту */
+    font-weight: 700; /* Жирний заголовок */
+    font-size: 36px; /* Розмір заголовку згідно макету */
+    line-height: 40px; /* Висота рядка */
+    letter-spacing: 2%; /* Відстань між літерами */
+    text-align: left; /* Вирівнювання по лівому краю */
+    margin-bottom: 8px; /* Відстань до параграфа */
+  }
+
+  .list-paragraph {
+    font-family: "Roboto", sans-serif; /* Стиль шрифту */
+    font-weight: 500; /* Напівжирний текст */
+    font-size: 16px; /* Розмір тексту згідно макету */
+    line-height: 24px; /* Висота рядка */
+    letter-spacing: 2%; /* Відстань між літерами */
+    text-align: left; /* Вирівнювання по лівому краю */
+    margin: 0; /* Вилучення зайвих зовнішніх відступів */
+  }
+
+  /* Третя секція. Планшет */
+
+  .team-list-drei {
     display: flex; /* Включення flex для правильного вирівнювання */
     flex-wrap: wrap; /* Дозволити обгортання елементів */
     justify-content: space-between; /* Вирівнювання між елементами по горизонталі */
   }
-
-  .list-section-two {
-    width: 50%; /* Ширина уявних прямокутників для двох стовпчиків */
-    height: 120px; /* Висота уявних прямокутників */
-    margin-bottom: 72px; /* Відступ між рядками (знизу) */
-    padding: 16px; /* Внутрішні відступи для тексту */
-    box-sizing: border-box; /* Включити padding в загальну ширину */
-    position: relative; /* Відносне позиціонування для внутрішніх елементів */
-  }
-
-  /* Сховати фон для уявних прямокутників */
-  .list-section-two::before {
-    content: ""; /* Псевдоелемент для створення уявного прямокутника */
-    display: block;
-    width: 100%; /* Ширина псевдоелемента */
-    height: 100%; /* Висота псевдоелемента */
-    position: absolute; /* Абсолютне позиціонування */
-    top: 0; /* Верхня межа */
-    left: 0; /* Ліва межа */
-    z-index: -1; /* Під текстом */
-  }
-
-  .icon-container {
-    display: none; /* Сховати іконки */
-  }
-
-  .list-title {
-    font-family: "Roboto", sans-serif; /* Шрифт заголовка */
-    font-weight: 700; /* Жирність шрифту заголовка */
-    font-size: 36px; /* Розмір шрифту для заголовка */
-    line-height: 40px; /* Висота рядка */
-    letter-spacing: 2%; /* Відстань між літерами */
-    text-align: left; /* Вирівнювання по лівому краю */
-    margin-bottom: 8px; /* Відступ знизу */
-  }
-
-  .list-paragraph {
-    font-family: "Roboto", sans-serif; /* Шрифт параграфа */
-    font-weight: 500; /* Жирність шрифту параграфа */
-    font-size: 16px; /* Розмір шрифту для параграфа */
-    line-height: 24px; /* Висота рядка */
-    letter-spacing: 2%; /* Відстань між літерами */
-    text-align: left; /* Вирівнювання по лівому краю */
-    margin: 0; /* Відсутність відступів */
-  }
-
-  /* Додатковий стилізацій для кожного другого елемента, щоб уникнути відступу на правому краю */
-  .list-section-two:nth-child(2n) {
-    margin-right: 0; /* Немає відступу для другого елемента в рядку */
-  }
-
-  /* Третя секція. Планшет */
 
   .team-info {
     padding: 32px 16px; /* Відступи зверху та знизу 32px, зліва та справа 16px */
@@ -945,7 +953,7 @@ button {
     fill: var(--secondary-color, #f4f4fd); /* Колір іконки при виборі */
   }
 
-  .team-list {
+  .team-list-dva {
     display: flex; /* Флексбокс для розташування елементів */
     gap: 24px; /* Проміжок між елементами */
     flex-wrap: wrap; /* Перенесення елементів на новий рядок */
@@ -1018,6 +1026,16 @@ button {
   /* Для ПК та великих екранів (від 1158px і більше) */
 
   /* Контейнер для імені та посади */
+
+  .team-list-drei {
+    display: flex; /* Флексбокс для розташування елементів */
+    gap: 24px; /* Проміжок між елементами */
+    flex-wrap: wrap; /* Перенесення елементів на новий рядок */
+    list-style: none; /* Відсутність маркерів списку */
+    padding: 0; /* Відсутність внутрішніх відступів */
+    margin: 0; /* Відсутність зовнішніх відступів */
+  }
+
   .team-info {
     padding: 32px 0; /* Встановлює відступи зверху та знизу по 32px, зліва та справа - 0 */
   }
