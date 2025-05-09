@@ -1009,6 +1009,162 @@ button {
     letter-spacing: 0.02em; /* Відстань між літерами */
     color: #434455; /* Сірий текст */
   }
+
+  /* ===== ПЛАНШЕТНА ВЕРСІЯ FOOTER ===== */
+
+  .site-footer {
+    /* Загальний стиль підвалу */
+    background-color: #2e2f42; /* Темний фон підвалу */
+    padding: 96px 0; /* Відступи зверху та знизу */
+    padding-left: 150px; /* Відступ зліва */
+    color: #f4f4fd; /* Світлий колір тексту */
+  }
+
+  .container-footer {
+    width: 768px; /* Адаптована ширина для планшетної версії */
+    margin: 0 auto; /*  Вирівнювання по лівому краю */
+    display: flex; /* Гнучке вирівнювання елементів */
+    flex-wrap: wrap; /* Перенос рядків при переповненні */
+    row-gap: 72px; /* Проміжок між рядками (як у макеті) */
+  }
+
+  /* Логотип + опис */
+  .content-wrapper {
+    margin-right: 24px; /* Проміжок між блоками */
+  }
+
+  .webstudio-link {
+    /* Стиль текстового логотипу */
+    font-family: "Raleway", sans-serif; /* Шрифт Raleway */
+    font-weight: 700; /* Жирний текст */
+    font-size: 18px; /* Розмір шрифту */
+    line-height: 1.17; /* Висота рядка */
+    letter-spacing: 0.03em; /* Інтервал між літерами */
+    text-transform: uppercase; /* Текст великими літерами */
+    color: #4d5ae5; /* Синій колір тексту */
+    margin-bottom: 16px; /* Відступ знизу */
+    display: inline-block; /* Відображення в одному рядку */
+  }
+
+  .logo-span-footer {
+    /* Колір тексту логотипу у підвалі */
+    color: #f4f4fd; /* Білий колір */
+  }
+
+  .footer-description {
+    /* Опис компанії у підвалі */
+    font-size: 16px; /* Розмір тексту */
+    line-height: 1.5; /* Висота рядка */
+    letter-spacing: 0.02em; /* Інтервал між літерами */
+    color: #f4f4fd; /* Білий колір */
+    text-align: left; /* Вирівнювання тексту зліва */
+    width: 264px; /* Ширина блоку */
+  }
+
+  /* Блок соціальних мереж */
+  .social-media-wrapper {
+    /* Обгортка для соціальних посилань */
+    display: flex; /* Гнучке вирівнювання елементів */
+    flex-direction: column; /* Вертикальне розташування */
+    align-items: flex-start; /* Вирівнювання по початку */
+  }
+
+  .social-text {
+    /* Текстовий опис перед соціальними іконками */
+    font-weight: 500; /* Напівжирний текст */
+    font-size: 16px; /* Розмір шрифту */
+    line-height: 1.5; /* Висота рядка */
+    letter-spacing: 0.02em; /* Інтервал між літерами */
+    color: #ffffff; /* Білий колір */
+    margin-bottom: 16px; /* Відступ знизу */
+  }
+
+  .social-list-footer {
+    /* Список соціальних посилань */
+    list-style: none; /* Без маркерів */
+    display: flex; /* Гнучке вирівнювання */
+    gap: 16px; /* Проміжок між іконками */
+    padding: 0; /* Скидання внутрішніх відступів */
+    margin: 0; /* Скидання зовнішніх відступів */
+  }
+
+  .social-item {
+    /* Контейнер для кожної соціальної іконки */
+    width: 40px; /* Розмір контейнера */
+    height: 40px; /* Розмір контейнера */
+  }
+
+  .social-link-footer {
+    /* Кнопка соціального посилання */
+    width: 100%; /* Ширина кнопки */
+    height: 100%; /* Висота кнопки */
+    background-color: #4d5ae5; /* Синій фон */
+    border-radius: 50%; /* Округла форма */
+    display: flex; /* Гнучке вирівнювання */
+    justify-content: center; /* Центрування по горизонталі */
+    align-items: center; /* Центрування по вертикалі */
+    transition: background-color 250ms ease-in-out; /* Плавна зміна фону */
+  }
+
+  .social-link-footer:hover,
+  .social-link-footer:focus {
+    /* Ефект при наведенні або фокусі */
+    background-color: #31d0aa; /* Зміна кольору фону */
+  }
+
+  .social-icon-footer {
+    /* Іконка соціальної мережі */
+    fill: #f4f4fd; /* Білий колір іконки */
+    width: 24px; /* Розмір іконки */
+    height: 24px; /* Розмір іконки */
+  }
+
+  /* Блок підписки */
+  .subscribe-wrapper {
+    /* Обгортка форми підписки */
+    margin-right: auto; /* Вирівнювання ліворуч */
+  }
+
+  .subscribe-text {
+    /* Текст форми підписки */
+    margin-bottom: 16px; /* Відступ знизу */
+    font-weight: 500; /* Напівжирний текст */
+    font-size: 16px; /* Розмір шрифту */
+    line-height: 1.5; /* Висота рядка */
+    letter-spacing: 0.02em; /* Інтервал між літерами */
+    color: #ffffff; /* Білий колір */
+  }
+
+  .subscribe-form {
+    /* Контейнер форми підписки */
+    display: flex; /* Гнучке вирівнювання */
+    gap: 24px; /* Проміжок між елементами */
+  }
+
+  .subscribe-input {
+    /* Поле введення підписки */
+    width: 264px; /* Ширина поля */
+    height: 40px; /* Висота поля */
+    border: 1px solid #ffffff; /* Білий контур */
+    background-color: transparent; /* Прозорий фон */
+    color: #ffffff; /* Білий текст */
+  }
+
+  .subscribe-input::placeholder {
+    /* Стиль підказки у полі підписки */
+    color: #ffffff; /* Білий колір */
+  }
+
+  .subscribe-button {
+    /* Кнопка підписки */
+    cursor: pointer; /* Змінений курсор */
+  }
+
+  .subscribe-icon {
+    /* Іконка в кнопці підписки */
+    margin-left: 16px; /* Відступ зліва */
+    fill: white; /* Білий колір іконки */
+  }
 }
 
 /* ПК */
@@ -1518,183 +1674,182 @@ button {
     transition: transform 0.3s ease; /* Плавний перехід */
   }
 
-  /* Футер сторінки. */
-
-  /* ===== FOOTER SECTION STYLES ===== */
+  /* Футер сторінки. ПК */
 
   .site-footer {
-    background-color: #2e2f42;
-    padding: 100px 0;
-    color: #f4f4fd;
+    background-color: #2e2f42; /* Фон футера */
+    padding: 100px 0; /* Відступи зверху і знизу по 100px */
+    color: #f4f4fd; /* Колір тексту за замовчуванням */
   }
 
   .container-footer {
-    width: 1158px;
-    margin: 0 auto;
-    padding: 0 15px;
-    display: flex;
-    align-items: baseline;
+    width: 1158px; /* Фіксована ширина контейнера */
+    margin: 0 auto; /* Центрування по горизонталі */
+    padding: 0 15px; /* Внутрішній відступ зліва і справа */
+    display: flex; /* Гнучке розміщення дочірніх елементів */
+    align-items: baseline; /* Вирівнювання по базовій лінії */
   }
 
   .content-wrapper {
-    margin-right: 120px;
+    margin-right: 120px; /* Відступ справа */
   }
 
   .webstudio-link {
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #4d5ae5;
-    text-decoration: none;
-    display: inline-block;
+    font-family: "Raleway", sans-serif; /* Шрифт логотипу */
+    font-weight: 700; /* Товщина шрифту */
+    font-size: 18px; /* Розмір шрифту */
+    line-height: 1.17; /* Міжрядковий інтервал */
+    letter-spacing: 0.03em; /* Міжсимвольний інтервал */
+    text-transform: uppercase; /* Перетворення на великі літери */
+    color: #4d5ae5; /* Колір тексту */
+    text-decoration: none; /* Без підкреслення */
+    display: inline-block; /* Відображення як блочний елемент у рядку */
   }
 
   .kolobok {
-    margin-bottom: 16px;
+    margin-bottom: 16px; /* Відступ знизу */
   }
 
   .logo-span-footer {
-    color: #f4f4fd;
-    margin-bottom: 16px;
+    color: #f4f4fd; /* Колір тексту в логотипі */
+    margin-bottom: 16px; /* Відступ знизу */
   }
 
   .footer-description {
-    margin-top: 0;
-    margin-bottom: 0;
-    width: 264px;
-    font-family: "Roboto", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.02em;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    color: #f4f4fd;
+    margin-top: 0; /* Без відступу зверху */
+    margin-bottom: 0; /* Без відступу знизу */
+    width: 264px; /* Ширина текстового блоку */
+    font-family: "Roboto", sans-serif; /* Шрифт */
+    font-size: 16px; /* Розмір шрифту */
+    font-weight: 400; /* Стандартна товщина */
+    line-height: 24px; /* Висота рядка */
+    letter-spacing: 0.02em; /* Міжсимвольний інтервал */
+    text-align: left; /* Вирівнювання по лівому краю */
+    text-underline-position: from-font; /* Позиція підкреслення */
+    text-decoration-skip-ink: none; /* Без пропуску підкреслення під символами */
+    color: #f4f4fd; /* Колір тексту */
   }
 
   /* ===== SOCIAL MEDIA BLOCK ===== */
 
   .social-media-wrapper {
-    display: flex;
-    flex-direction: column;
+    display: flex; /* Гнучке розміщення */
+    flex-direction: column; /* Колонкова структура */
   }
 
   .social-text {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #ffffff;
-    margin-bottom: 16px;
+    font-weight: 500; /* Напівжирний */
+    font-size: 16px; /* Розмір шрифту */
+    line-height: 1.5; /* Висота рядка */
+    letter-spacing: 0.02em; /* Міжсимвольний інтервал */
+    color: #ffffff; /* Колір тексту */
+    margin-bottom: 16px; /* Відступ знизу */
   }
 
   .social-list-footer {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    gap: 16px;
+    list-style: none; /* Без маркерів */
+    padding: 0; /* Без внутрішніх відступів */
+    margin: 0; /* Без зовнішніх відступів */
+    display: flex; /* Гнучкий список */
+    justify-content: center; /* Центрування */
+    gap: 16px; /* Проміжок між елементами */
   }
 
   .social-item {
-    width: 40px;
-    height: 40px;
-    display: inline-block;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 40px; /* Ширина елемента */
+    height: 40px; /* Висота елемента */
+    display: inline-block; /* Відображення в рядку */
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Плавна зміна кольору фону */
   }
 
   .social-link-footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    background-color: #4d5ae5;
-    border-radius: 50%;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex; /* Гнучке відображення */
+    align-items: center; /* Центрування по вертикалі */
+    justify-content: center; /* Центрування по горизонталі */
+    width: 100%; /* Повна ширина */
+    height: 100%; /* Повна висота */
+    background-color: #4d5ae5; /* Колір фону */
+    border-radius: 50%; /* Коло */
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Плавна анімація */
   }
 
   .social-link-footer:hover,
   .social-link-footer:focus {
-    background-color: #31d0aa;
-    outline: none;
+    background-color: #31d0aa; /* Колір при наведенні/фокусі */
+    outline: none; /* Вимкнення рамки */
   }
 
   .social-icon-footer {
-    fill: #f4f4fd;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: #f4f4fd; /* Колір заливки іконки */
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Плавна анімація */
   }
 
   /* ===== SUBSCRIBE FORM BLOCK ===== */
 
   .subscribe-wrapper {
-    margin-left: auto;
+    margin-left: auto; /* Автоматичний відступ для вирівнювання праворуч */
   }
 
   .subscribe-text {
-    margin-bottom: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #ffffff;
+    margin-bottom: 16px; /* Відступ знизу */
+    font-weight: 500; /* Напівжирний */
+    line-height: 1.5; /* Висота рядка */
+    letter-spacing: 0.02em; /* Міжсимвольний інтервал */
+    color: #ffffff; /* Колір тексту */
   }
 
   .subscribe-form {
-    display: flex;
-    gap: 24px;
+    display: flex; /* Гнучке розміщення */
+    gap: 24px; /* Проміжок між полем і кнопкою */
   }
 
   .subscribe-label {
+    /* Порожній селектор (можливо використовується в HTML для семантики) */
   }
 
   .subscribe-input {
-    width: 264px;
-    height: 40px;
-    border: 1px solid #ffffff;
-    background-color: transparent;
-    font-size: 12px;
-    line-height: 2;
-    letter-spacing: 0.04em;
-    padding-left: 16px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    color: #ffffff;
+    width: 264px; /* Ширина поля */
+    height: 40px; /* Висота поля */
+    border: 1px solid #ffffff; /* Білий контур */
+    background-color: transparent; /* Прозорий фон */
+    font-size: 12px; /* Розмір шрифту */
+    line-height: 2; /* Висота рядка */
+    letter-spacing: 0.04em; /* Міжсимвольний інтервал */
+    padding-left: 16px; /* Внутрішній відступ зліва */
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); /* Тінь */
+    border-radius: 4px; /* Скруглені кути */
+    color: #ffffff; /* Колір тексту */
   }
 
   .subscribe-input::placeholder {
-    color: #ffffff;
+    color: #ffffff; /* Колір плейсхолдера */
   }
 
   .subscribe-button {
-    min-width: 165px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    color: #ffffff;
-    cursor: pointer;
-    background-color: #4d5ae5;
-    border: none;
-    border-radius: 4px;
-    transition: background-color 0.3s ease-in-out;
+    min-width: 165px; /* Мінімальна ширина кнопки */
+    height: 40px; /* Висота */
+    display: flex; /* Гнучке відображення */
+    justify-content: center; /* Центрування по горизонталі */
+    align-items: center; /* Центрування по вертикалі */
+    font-weight: 500; /* Напівжирний */
+    line-height: 1.5; /* Висота рядка */
+    letter-spacing: 0.04em; /* Міжсимвольний інтервал */
+    color: #ffffff; /* Колір тексту */
+    cursor: pointer; /* Курсор у вигляді руки */
+    background-color: #4d5ae5; /* Колір фону */
+    border: none; /* Без рамки */
+    border-radius: 4px; /* Скруглені кути */
+    transition: background-color 0.3s ease-in-out; /* Плавна зміна кольору */
   }
 
   .subscribe-button:hover,
   .subscribe-button:focus {
-    background-color: #31d0aa;
+    background-color: #31d0aa; /* Колір при наведенні/фокусі */
   }
 
   .subscribe-icon {
-    margin-left: 16px;
-    fill: white;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-left: 16px; /* Відступ зліва між текстом і іконкою */
+    fill: white; /* Колір заливки іконки */
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Плавна зміна кольору */
   }
 }
