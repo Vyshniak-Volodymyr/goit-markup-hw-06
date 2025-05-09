@@ -637,6 +637,179 @@ button {
     letter-spacing: 0.02em;
     color: #434455;
   }
+
+  /* ФУТЕР. Мобільний телефон */
+
+  .site-footer {
+    background-color: #2e2f42; /* Темний фон футера */
+    padding: 96px 0; /* Відступи зверху і знизу по 96px */
+    color: #f4f4fd; /* Основний колір тексту */
+    overflow-x: hidden; /* Приховати горизонтальну прокрутку (для уникнення обрізання логотипу) */
+  }
+
+  .container-footer {
+    width: 100%; /* Контейнер займає всю ширину екрану */
+    max-width: 320px; /* Максимальна ширина як у макеті */
+    margin: 0 auto; /* Центрування контейнера */
+    padding: 0 16px; /* Внутрішні відступи зліва і справа */
+    display: flex; /* Встановити флекс-контейнер */
+    flex-direction: column; /* Дочірні елементи йдуть вертикально */
+    align-items: center; /* Вирівнювання всіх елементів по центру */
+  }
+
+  .content-wrapper {
+    margin-bottom: 72px; /* Відступ знизу до блоку соцмереж */
+    text-align: center; /* Центрування вмісту */
+  }
+
+  .webstudio-link {
+    font-family: "Raleway", sans-serif; /* Шрифт логотипу */
+    font-weight: 700; /* Товщина шрифту – жирний */
+    font-size: 18px; /* Розмір шрифту */
+    line-height: 1.17; /* Міжрядковий інтервал */
+    letter-spacing: 0.03em; /* Відстань між літерами */
+    text-transform: uppercase; /* Всі літери великими */
+    color: #4d5ae5; /* Синій колір для слова "WEB" */
+    text-decoration: none; /* Відсутність підкреслення */
+    display: inline-block; /* Поведінка блоку в рядку */
+    margin-bottom: 16px; /* Відступ знизу логотипу */
+    word-wrap: break-word; /* Переносити слово при потребі */
+  }
+
+  .logo-span-footer {
+    color: #f4f4fd; /* Білий колір для слова "STUDIO" */
+  }
+
+  .footer-description {
+    width: 288px; /* Фіксована ширина блоку тексту */
+    margin: 0 auto; /* Центрування горизонтально */
+    font-family: "Roboto", sans-serif; /* Основний шрифт тексту */
+    font-size: 16px; /* Розмір шрифту */
+    line-height: 24px; /* Висота рядка */
+    letter-spacing: 0.02em; /* Відстань між символами */
+    text-align: left; /* Вирівнювання тексту по центру */
+    color: #f4f4fd; /* Білий колір тексту */
+  }
+
+  /* === Блок соціальних мереж === */
+
+  .social-media-wrapper {
+    display: flex; /* Флекс-контейнер */
+    flex-direction: column; /* Вертикальне розміщення */
+    align-items: center; /* Центрування по горизонталі */
+    margin-bottom: 72px; /* Відступ до секції підписки */
+  }
+
+  .social-text {
+    font-size: 16px; /* Розмір шрифту */
+    font-weight: 500; /* Напівжирний */
+    line-height: 1.5; /* Висота рядка */
+    letter-spacing: 0.02em; /* Відстань між літерами */
+    color: #ffffff; /* Білий колір */
+    margin-bottom: 16px; /* Відступ знизу до іконок */
+  }
+
+  .social-list-footer {
+    list-style: none; /* Відключення маркерів списку */
+    display: flex; /* Розміщення іконок в ряд */
+    gap: 16px; /* Відстань між іконками */
+    padding: 0; /* Відсутність внутрішніх відступів */
+    margin: 0; /* Відсутність зовнішніх відступів */
+    justify-content: center; /* Центрування по горизонталі */
+  }
+
+  .social-item {
+    width: 40px; /* Ширина іконки */
+    height: 40px; /* Висота іконки */
+  }
+
+  .social-link-footer {
+    width: 100%; /* Заповнення всієї ширини батьківського блоку */
+    height: 100%; /* Заповнення всієї висоти */
+    background-color: #4d5ae5; /* Синій фон іконки */
+    border-radius: 50%; /* Заокруглення до круга */
+    display: flex; /* Центрування іконки */
+    align-items: center; /* Вертикальне центрування */
+    justify-content: center; /* Горизонтальне центрування */
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Плавна анімація при наведенні */
+  }
+
+  .social-link-footer:hover,
+  .social-link-footer:focus {
+    background-color: #31d0aa; /* Зелений колір при наведенні */
+  }
+
+  .social-icon-footer {
+    fill: #f4f4fd; /* Білий колір SVG-іконки */
+  }
+
+  /* === Блок підписки === */
+
+  .subscribe-wrapper {
+    width: 100%; /* Повна ширина */
+    text-align: center; /* Центрування заголовка */
+  }
+
+  .subscribe-text {
+    margin-bottom: 16px; /* Відступ до форми */
+    font-weight: 500; /* Напівжирний */
+    line-height: 1.5; /* Висота рядка */
+    letter-spacing: 0.02em; /* Відстань між літерами */
+    color: #ffffff; /* Білий колір */
+  }
+
+  .subscribe-form {
+    display: flex; /* Флекс-контейнер */
+    flex-direction: column; /* Вертикальне розміщення поля і кнопки */
+    align-items: center; /* Центрування */
+    gap: 16px; /* Відстань між полем і кнопкою */
+  }
+
+  .subscribe-input {
+    width: 288px; /* Ширина поля відповідно до макету */
+    height: 40px; /* Висота поля */
+    padding-left: 16px; /* Внутрішній відступ зліва */
+    border: 1px solid #ffffff; /* Білий контур */
+    background-color: transparent; /* Прозорий фон */
+    color: #ffffff; /* Білий текст */
+    font-size: 12px; /* Розмір шрифту */
+    letter-spacing: 0.04em; /* Відстань між символами */
+    line-height: 2; /* Висота рядка */
+    border-radius: 4px; /* Заокруглення кутів */
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); /* Тінь під полем */
+  }
+
+  .subscribe-input::placeholder {
+    color: #ffffff; /* Колір плейсхолдера */
+  }
+
+  .subscribe-button {
+    width: 165px; /* Ширина кнопки як у макеті */
+    height: 40px; /* Висота кнопки */
+    background-color: #4d5ae5; /* Синій фон */
+    color: #ffffff; /* Білий текст */
+    font-weight: 500; /* Напівжирний */
+    font-size: 16px; /* Розмір тексту */
+    line-height: 1.5; /* Висота рядка */
+    letter-spacing: 0.04em; /* Відстань між літерами */
+    border: none; /* Без рамки */
+    border-radius: 4px; /* Заокруглені кути */
+    cursor: pointer; /* Курсор у вигляді руки */
+    display: flex; /* Центрування вмісту */
+    justify-content: center; /* Горизонтальне центрування */
+    align-items: center; /* Вертикальне центрування */
+    transition: background-color 0.3s ease-in-out; /* Анімація кольору */
+  }
+
+  .subscribe-button:hover,
+  .subscribe-button:focus {
+    background-color: #31d0aa; /* Зелений фон при наведенні */
+  }
+
+  .subscribe-icon {
+    margin-left: 16px; /* Відступ між текстом і іконкою */
+    fill: #ffffff; /* Колір іконки літачка */
+  }
 }
 
 /* Для планшетів і малих екранів (768px - 1157px) */
@@ -1016,7 +1189,7 @@ button {
     /* Загальний стиль підвалу */
     background-color: #2e2f42; /* Темний фон підвалу */
     padding: 96px 0; /* Відступи зверху та знизу */
-    padding-left: 150px; /* Відступ зліва */
+    padding-left: 108px; /* Відступ зліва */
     color: #f4f4fd; /* Світлий колір тексту */
   }
 
