@@ -807,8 +807,9 @@ button {
   }
 
   .subscribe-icon {
-    margin-left: 16px; /* Відступ між текстом і іконкою */
-    fill: #ffffff; /* Колір іконки літачка */
+    margin-left: 16px;
+    fill: white;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); /* плавна зміна кольору */
   }
 }
 
@@ -1183,7 +1184,7 @@ button {
     color: #434455; /* Сірий текст */
   }
 
-  /* ===== ПЛАНШЕТНА ВЕРСІЯ FOOTER ===== */
+  /* ===== ПЛАНШЕТНА ВЕРСІЯ Футер FOOTER ===== */
 
   .site-footer {
     /* Загальний стиль підвалу */
@@ -1337,6 +1338,29 @@ button {
     /* Іконка в кнопці підписки */
     margin-left: 16px; /* Відступ зліва */
     fill: white; /* Білий колір іконки */
+  }
+
+  .subscribe-button {
+    display: flex; /* Щоб іконка й текст були в ряд */
+    align-items: center; /* Центрування по вертикалі */
+    justify-content: center; /* Центрування по горизонталі */
+    padding: 8px 24px; /* Відступи всередині кнопки */
+    min-width: 165px; /* Фіксована мінімальна ширина як на макеті */
+    height: 40px; /* Висота кнопки */
+    background-color: #4d5ae5; /* Синій фон */
+    border: none; /* Без рамки */
+    border-radius: 4px; /* Закруглення кутів */
+    color: #ffffff; /* Білий текст */
+    font-weight: 500; /* Напівжирний текст */
+    font-size: 16px; /* Розмір шрифту */
+    line-height: 1.5; /* Висота рядка */
+    letter-spacing: 0.04em; /* Інтервал між літерами */
+    transition: background-color 250ms ease-in-out; /* Анімація */
+  }
+
+  .subscribe-button:hover,
+  .subscribe-button:focus {
+    background-color: #31d0aa;
   }
 }
 
@@ -2022,7 +2046,7 @@ button {
 
   .subscribe-icon {
     margin-left: 16px; /* Відступ зліва між текстом і іконкою */
-    fill: white; /* Колір заливки іконки */
+    fill: rgb(255, 255, 255); /* Колір заливки іконки */
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Плавна зміна кольору */
   }
 }
