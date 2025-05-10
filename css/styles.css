@@ -812,58 +812,226 @@ button {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); /* плавна зміна кольору */
   }
 
-  /* Модульне вікно. Планшетна версія. */
-.modal {
-    width: 288px; /* Ширина модалки відповідно до макету */
-    padding: 72px 16px 24px 16px; /* Зменшено внутрішні відступи ліворуч/праворуч */
+  /* 10.05.2025 */
+
+  /* Модальне вікно. мобільний телефон. Творить Володимир Вишняк */
+
+  /* ------------------------------- */
+  /* КОНТЕЙНЕР МОДАЛКИ */
+  /* ------------------------------- */
+  .modal-container {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(46, 47, 66, 0.4);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
   }
 
+  /* ------------------------------- */
+  /* ВМІСТ МОДАЛКИ */
+  /* ------------------------------- */
+  .modal {
+    position: relative;
+    width: 288px;
+    padding: 72px 16px 24px 16px;
+    background-color: #fcfcfc;
+    border-radius: 4px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+
+  /* ------------------------------- */
+  /* КНОПКА ЗАКРИТТЯ */
+  /* ------------------------------- */
+  .close-button {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #e7e9fc;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 250ms ease;
+  }
+  .close-button:hover,
+  .close-button:focus {
+    background-color: #404bbf;
+  }
+  .icon-xsymbol {
+    fill: #2e2f42;
+  }
+
+  /* ------------------------------- */
+  /* ЗАГОЛОВОК */
+  /* ------------------------------- */
   .modal-text {
-    font-size: 16px; /* Залишаємо розмір як є */
-    text-align: center; /* Центрування заголовка */
-    margin-bottom: 16px; /* Відступ до форми */
-    width: 256px; /* Обмеження ширини тексту згідно з макетом */
-    margin-left: auto;
-    margin-right: auto;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    width: 256px;
+    margin: 0 auto 16px auto;
   }
 
+  /* ------------------------------- */
+  /* ІНПУТИ */
+  /* ------------------------------- */
   .form-group,
   .form-group-comment {
-    width: 100%; /* Групи форм займають всю ширину */
-    max-width: 256px; /* Максимальна ширина згідно макету */
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 256px;
+    margin: 0 auto 8px auto;
+  }
+  .form-group-comment {
+    margin-bottom: 16px;
   }
 
-  .input,
+  .input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .input {
+    width: 100%;
+    height: 40px;
+    padding-left: 38px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    background-color: transparent;
+    outline: transparent;
+    transition: border-color 250ms ease;
+  }
+  .input:focus {
+    border-color: #4d5ae5;
+  }
+  .input:focus + .input-icon {
+    fill: #4d5ae5;
+  }
+
+  .input-icon {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    fill: #2e2f42;
+    transition: fill 250ms ease;
+  }
+
+  /* ------------------------------- */
+  /* TEXTAREA */
+  /* ------------------------------- */
   .textarea {
-    width: 100%; /* Вводи займають всю ширину */
+    width: 100%;
+    height: 120px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 8px 16px;
+    outline: transparent;
+    resize: none;
+    transition: border-color 250ms ease;
+  }
+  .textarea:focus {
+    border-color: #4d5ae5;
   }
 
+  /* ------------------------------- */
+  /* CHECKBOX */
+  /* ------------------------------- */
   .checkbox-container {
-    max-width: 256px; /* Відповідно до макету */
-    margin: 0 auto 24px auto; /* Центрування та нижній відступ */
+    max-width: 256px;
+    margin: 0 auto 24px auto;
   }
 
+  .checkbox-label {
+    display: flex; /* Вирівнювання іконки і тексту */
+    align-items: flex-start; /* Початок тексту по верхній межі */
+    gap: 8px; /* Відстань між іконкою і текстом */
+    font-size: 12px; /* Розмір шрифту */
+    line-height: 1.17; /* Висота рядка */
+    letter-spacing: 0.04em; /* Відстань між літерами */
+    color: #8e8f99; /* Основний сірий колір тексту */
+  }
+
+  /* Текстовий блок (дві лінії підряд) */
+  .checkbox-text {
+    display: inline-block; /* Забезпечує обмеження всередині */
+    max-width: 100%; /* Впевненість що не розтягується */
+  }
+
+  .checkbox-custom {
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+    flex-shrink: 0;
+    transition: background-color 250ms ease, fill 250ms ease;
+  }
+  .visually-hidden:checked + .checkbox-label .checkbox-custom {
+    background-color: #404bbf;
+    border: none;
+    fill: #f4f4fd;
+  }
+  .checkbox-custom svg {
+    width: 10px;
+    height: 8px;
+  }
+  .privacy-policy-link {
+    color: #4d5ae5;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: color 250ms ease;
+    white-space: nowrap;
+  }
+  .privacy-policy-link:hover {
+    color: #007bff;
+  }
+
+  /* Кнопка "Send" */
   .submit-button {
-    width: 169px; /* Розмір кнопки "Send" як у макеті */
-    height: 56px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+    display: block; /* Робить кнопку блочним елементом для того, щоб margin: auto працював */
+    width: 169px; /* Ширина кнопки згідно макету */
+    height: 56px; /* Висота кнопки згідно макету */
+    margin: 0 auto; /* Центрує кнопку по горизонталі всередині контейнера */
+    background-color: #4d5ae5; /* Основний фоновий колір кнопки */
+    border: none; /* Видаляє стандартну рамку браузера */
+    border-radius: 4px; /* Заокруглення кутів кнопки згідно макету */
+    color: #ffffff; /* Колір тексту — білий */
+    font-family: "Roboto", sans-serif; /* Шрифт кнопки */
+    font-size: 16px; /* Розмір шрифту */
+    font-weight: 500; /* Напівжирний текст */
+    line-height: 1.5; /* Висота рядка */
+    letter-spacing: 0.04em; /* Відстань між літерами */
+    text-align: center; /* Вирівнювання тексту по центру кнопки */
+    cursor: pointer; /* Вказує, що елемент клікабельний */
+    transition: background-color 250ms ease; /* Плавна анімація при зміні фону */
   }
 
-  .submit-button span {
-    display: block;
-    text-align: center;
+  /* Стан при наведенні */
+  .submit-button:hover {
+    background-color: #31d0aa; /* Колір кнопки при ховері згідно макету */
   }
-
-  /* модульне вікно. Телефон. */
-
-  
-
- /* модульне вікно. Телефон. END*/
-
 }
 
 /* Для планшетів і малих екранів (768px - 1157px) */
@@ -1620,6 +1788,7 @@ button {
   }
 
   .privacy-policy-link {
+    white-space: nowrap;
     color: var(--link-color, #4d5ae5);
     text-decoration: underline;
     cursor: pointer;
