@@ -297,7 +297,7 @@ button {
 
     /* width: 100%;  Займати всю доступну ширину */
     max-width: 320px; /* Обмежити ширину відповідно до мобільного макету */
-    min-height: 432px; /* Мінімальна висота секції за макетом (Figma) */
+    /* min-height: 432px;  Мінімальна висота секції за макетом (Figma) */
 
     /* display: flex; * Використання flexbox для розташування контенту */
     flex-direction: column; /* Розміщення елементів вертикально */
@@ -316,7 +316,7 @@ button {
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
-    margin-bottom: 24px; /* додати відстань до кнопки */
+    /* margin-bottom: 24px;  додати відстань до кнопки */
     padding: 0; /* переконатися, що немає зайвих відступів */
     font-family: Roboto, sans-serif;
     font-weight: 700;
@@ -342,7 +342,7 @@ button {
     text-align: center; /* Центрування тексту */
     transition: background-color 250ms ease; /* Плавна анімація при наведенні */
     margin-bottom: 0; /* Відсутність нижнього відступу */
-    margin-top: 60px; /* або більше, залежно від бажаної позиції */
+    margin-top: 72px; /* або більше, залежно від бажаної позиції */
   }
 
   .action-button:hover {
@@ -352,7 +352,7 @@ button {
   /* Секція номер два. Мобілка. */
 
   .two-section {
-    padding: 112px 0; /* Відступи зверху та знизу */
+    padding: 96px 0; /* Відступи зверху та знизу */
   }
 
   .team-list-dva {
@@ -398,10 +398,7 @@ button {
 
   /* === Секція команди (мобільна версія) === */
   .drei-section {
-    padding: 96px 28px 96px; /* Відступи згідно з макетом:
-                              - 96px зверху (до заголовка)
-                              - 28px зліва/справа (стандартний мобільний gutter)
-                              - 96px знизу (після останньої картки) */
+    padding: 96px 0px;
     background: #f4f4fd; /* Світлий фон блоку */
     text-align: center; /* Вирівнювання тексту та заголовка по центру */
   }
@@ -543,8 +540,6 @@ button {
     margin-top: 0; /* Без верхнього відступу */
     margin-bottom: 72px; /* Відступ знизу до першої картки */
     color: #333; /* Колір заголовка */
-    padding-left: 35px; /* Відступи ліворуч */
-    padding-right: 35px; /* Відступи праворуч */
   }
 
   /* Список карток */
@@ -1050,9 +1045,6 @@ button {
       ),
       url("../images/Foto_b.jpg"); /* Встановлює зображення фону після градієнта */
 
-    width: 768px;
-    height: 436px;
-
     background-position: center;
 
     background-repeat: no-repeat; /* Запобігає повторенню фону */
@@ -1066,8 +1058,8 @@ button {
     align-items: center; /* центрування по вертикалі */
 
     margin: 0 auto; /* Центрує секцію по горизонталі */
-    padding-top: 180px; /* Встановлює відступ зверху на 180 пікселів */
-    padding-bottom: 180px; /* Встановлює відступ знизу на 180 пікселів */
+    padding-top: 112px; /* Встановлює відступ зверху на 180 пікселів */
+    padding-bottom: 112px; /* Встановлює відступ знизу на 180 пікселів */
   }
 
   .section-title {
