@@ -1030,7 +1030,7 @@ button {
 
   /* Стан при наведенні */
   .submit-button:hover {
-    background-color: #31d0aa; /* Колір кнопки при ховері згідно макету */
+    background-color: #0d0fb5;
   }
 }
 
@@ -1784,12 +1784,12 @@ button {
   }
 
   .submit-button:hover {
-    background-color: #31d0aa;
+    background-color: #0d0fb5;
   }
 
   .privacy-policy-link {
     white-space: nowrap;
-    color: var(--link-color, #4d5ae5);
+    color: var(--link-color, #1523bb);
     text-decoration: underline;
     cursor: pointer;
     transition: color 250ms ease-in-out;
@@ -2703,7 +2703,7 @@ button {
   }
 
   .submit-button:hover {
-    background-color: #31d0aa; /* Зелений колір при наведенні */
+    background-color: #0d0fb5;
   }
 
   :root {
