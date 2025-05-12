@@ -960,8 +960,10 @@ button {
     margin: 0 auto 24px auto;
   }
 
+  /* мобільна версія */
+
   .checkbox-label {
-    display: flex; /* Вирівнювання іконки і тексту */
+    display: flex;
     align-items: flex-start; /* Початок тексту по верхній межі */
     gap: 8px; /* Відстань між іконкою і текстом */
     font-size: 12px; /* Розмір шрифту */
@@ -970,10 +972,14 @@ button {
     color: #8e8f99; /* Основний сірий колір тексту */
   }
 
-  /* Текстовий блок (дві лінії підряд) */
   .checkbox-text {
-    display: inline-block; /* Забезпечує обмеження всередині */
-    max-width: 100%; /* Впевненість що не розтягується */
+    display: inline; /* або block — якщо потрібно */
+    white-space: nowrap; /* запобігає переносу основного тексту */
+  }
+
+  .checkbox-text .privacy-policy-link {
+    display: block; /* переносить посилання на новий рядок */
+    margin-top: 4px; /* необов’язково: трохи відступу згори */
   }
 
   .checkbox-custom {
