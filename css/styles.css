@@ -310,18 +310,6 @@ button {
     padding-bottom: 72px; /* Внутрішній відступ знизу */
   }
 
-  /* Для екранів з високою щільністю (Retina, 2x і більше) */
-  @media (min-resolution: 2dppx) {
-    .main-section {
-      /* Такий самий градієнт, але зображення замінене на версію з більшою роздільною здатністю */
-      background-image: linear-gradient(
-          rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)
-        ),
-        url("../images/Foto_a@2x.jpg");
-    }
-  }
-
   /* Заголовок секції */
   .section-title {
     width: 216px;
@@ -1057,31 +1045,21 @@ button {
       ),
       url("../images/Foto_b.jpg"); /* Встановлює зображення фону після градієнта */
 
+    background-position: center;
+
     background-repeat: no-repeat; /* Запобігає повторенню фону */
     background-position: center; /* Центрує фон на елементі */
     background-size: cover; /* Масштабує фон, щоб покрити весь елемент */
+    max-width: 1157px; /* Встановлює максимальну ширину секції */
     background-color: #2e2f42; /* Встановлює колір фону на випадок, якщо зображення не завантажиться */
-
-    max-width: 1157px; /* Встановлює максимальну ширину секції відповідно до планшетного макету */
     text-align: center; /* Центрує текст всередині секції */
 
-    display: flex; /* Активує flex-контейнер */
-    align-items: center; /* Центрування вмісту по вертикалі */
+    display: flex; /* активуємо flex-контейнер */
+    align-items: center; /* центрування по вертикалі */
 
     margin: 0 auto; /* Центрує секцію по горизонталі */
-    padding-top: 112px; /* Встановлює внутрішній відступ зверху */
-    padding-bottom: 112px; /* Встановлює внутрішній відступ знизу */
-  }
-
-  /* Для екранів з високою щільністю (Retina, 2x і більше) */
-  @media (min-resolution: 2dppx) {
-    .main-section {
-      background-image: linear-gradient(
-          rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)
-        ),
-        url("../images/Foto_b@2x.jpg"); /* Підключення зображення з високою роздільністю */
-    }
+    padding-top: 112px; /* Встановлює відступ зверху на 180 пікселів */
+    padding-bottom: 112px; /* Встановлює відступ знизу на 180 пікселів */
   }
 
   .section-title {
@@ -1827,34 +1805,19 @@ button {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url("../images/Foto_c.jpg"); /* Встановлює зображення фону після градієнта */
-
-    background-repeat: no-repeat; /* Заборонити повторення зображення */
-    background-position: center; /* Центрувати зображення */
-    background-size: cover; /* Масштабувати зображення на всю секцію */
-    background-color: #2e2f42; /* Резервний колір фону на випадок, якщо зображення не завантажиться */
-
-    max-width: 1440px; /* Максимальна ширина секції згідно десктопного макету */
-    text-align: center; /* Центрування тексту в середині секції */
-
-    display: flex; /* Активація flexbox для вирівнювання вмісту */
-    align-items: center; /* Вертикальне центровання вмісту */
-    justify-content: center; /* Горизонтальне центровання вмісту */
-
-    margin: 0 auto; /* Центрування блоку по горизонталі */
-    padding-top: 112px; /* Відстань від верхнього краю секції до вмісту */
-    padding-bottom: 180px; /* Відстань від вмісту до нижнього краю секції */
-  }
-
-  /* Для екранів з високою щільністю (2x і більше) */
-  @media (min-resolution: 2dppx) {
-    .main-section {
-      background-image: linear-gradient(
-          rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)
-        ),
-        url("../images/Foto_c@2x.jpg"); /* Підключення зображення високої роздільності */
-    }
+      url("../images/img-name.jpeg"); /* Встановлює зображення фону після градієнта */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 1440px;
+    background-color: #2e2f42;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 112px; /* Відстань від тексту до верху секції */
+    padding-bottom: 180px; /* Відстань від кнопки до низу секції */
   }
 
   .section-title {
