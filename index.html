@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header" id="header">
       <div class="container header-container">
         <nav class="header-nav">
           <a class="logo header-logo" href="./index.html"
@@ -37,7 +37,7 @@
               <a class="nav-link" href="#portfolio">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contacts">Contacts</a>
+              <a class="nav-link" href="#footer">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -74,7 +74,7 @@
 
     <main>
       <!-- Section №1 -->
-      <section class="main-section">
+      <section class="main-section" id="hero">
         <div class="container">
           <h1 class="section-title">Effective Solutions for Your Business</h1>
           <button class="action-button" type="button" data-modal-open>
@@ -84,7 +84,7 @@
       </section>
 
       <!-- Section №2 -->
-      <section class="two-section">
+      <section class="two-section" id="features">
         <div class="container">
           <h2 class="visually-hidden">Team</h2>
           <ul class="team-list-dva">
@@ -148,7 +148,7 @@
       </section>
 
       <!-- Section №3 -->
-      <section class="drei-section">
+      <section class="drei-section" id="team">
         <div class="container">
           <h2 class="drei-team-title">Our Team</h2>
           <ul class="team-list-drei">
@@ -522,7 +522,7 @@
 
     <!-- Футер сторінки -->
 
-    <footer class="site-footer" id="contacts">
+    <footer class="site-footer" id="footer">
       <div class="container-footer">
         <div class="content-wrapper">
           <a href="./index.html" class="webstudio-link kolobok">
@@ -605,7 +605,7 @@
               <a href="./index.html" class="mobile-nav-link current">Studio</a>
             </li>
             <li><a href="#portfolio" class="mobile-nav-link">Portfolio</a></li>
-            <li><a href="#contacts" class="mobile-nav-link">Contacts</a></li>
+            <li><a href="#footer" class="mobile-nav-link">Contacts</a></li>
           </ul>
         </nav>
 
@@ -648,7 +648,7 @@
     </div>
 
     <!-- Модальне вікно. Контейнер для модального вікна -->
-    <div class="modal-container" data-modal aria-hidden="true">
+    <div class="modal-container" id="modal" data-modal aria-hidden="true">
       <div
         class="modal"
         role="dialog"
