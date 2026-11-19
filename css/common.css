@@ -1,3 +1,8 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 .hidden {
   display: none;
 }
@@ -7,14 +12,6 @@ body {
   color: #434455;
   background-color: #fff;
 }
-
-/* Вимкнення мобільного меню */
-
-/* 
-.modal-container {
-  display: none !important;
-}
-*/
 
 /* reset */
 
@@ -82,4 +79,3 @@ button {
     padding: 0 15px;
   }
 }
-
