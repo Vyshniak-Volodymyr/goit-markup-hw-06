@@ -1,0 +1,2 @@
+.team-item:focus-within .description { transform: translateY(0); }
+.team-item:focus .description { transform: translateY(0); }

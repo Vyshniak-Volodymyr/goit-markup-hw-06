@@ -1,0 +1,3 @@
+.main-section { max-width: 1440px; background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), image-set(url("../images/Foto_a.jpg") 1x, url("../images/Foto_a@2x.jpg") 2x); }
+@media screen and (min-width: 768px) { .main-section { background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), image-set(url("../images/Foto_b.jpg") 1x, url("../images/Foto_b@2x.jpg") 2x); } }
+@media screen and (min-width: 1158px) { .main-section { background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), image-set(url("../images/Foto_c.jpg") 1x, url("../images/Foto_c@2x.jpg") 2x); } }

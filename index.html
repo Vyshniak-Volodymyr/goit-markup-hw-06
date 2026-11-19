@@ -20,7 +20,7 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <header class="page-header">
@@ -53,66 +53,14 @@
           </ul>
         </address>
 
-        <button class="burger-btn" type="button" data-menu-open>
+        <button class="burger-btn" type="button" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false" data-menu-open>
           <svg class="burger-icon" width="24" height="24">
             <use href="./images/icons.svg#icon-menu"></use>
           </svg>
         </button>
       </div>
 
-      <div class="mobile-menu" data-menu>
-        <div class="mobile-menu-container">
-          <button class="mobile-menu-close" data-menu-close>&times;</button>
 
-          <nav class="mobile-menu-nav">
-            <ul class="mobile-nav-list">
-              <li>
-                <a href="./index.html" class="mobile-nav-link current"
-                  >Studio</a
-                >
-              </li>
-              <li><a href="#" class="mobile-nav-link">Portfolio</a></li>
-              <li><a href="#" class="mobile-nav-link">Contacts</a></li>
-            </ul>
-          </nav>
-
-          <address class="mobile-contacts">
-            <a href="tel:+110001111111" class="mobile-phone"
-              >+11 (000) 111-11-11</a
-            >
-            <a href="mailto:info@devstudio.com" class="mobile-email"
-              >info@devstudio.com</a
-            >
-          </address>
-
-          <ul class="mobile-socials">
-            <li>
-              <a href="#" class="social-icon-link"
-                ><svg width="24" height="24">
-                  <use href="./images/icons.svg#icon-instagram"></use></svg
-              ></a>
-            </li>
-            <li>
-              <a href="#" class="social-icon-link"
-                ><svg width="24" height="24">
-                  <use href="./images/icons.svg#icon-twitter"></use></svg
-              ></a>
-            </li>
-            <li>
-              <a href="#" class="social-icon-link"
-                ><svg width="24" height="24">
-                  <use href="./images/icons.svg#icon-facebook"></use></svg
-              ></a>
-            </li>
-            <li>
-              <a href="#" class="social-icon-link"
-                ><svg width="24" height="24">
-                  <use href="./images/icons.svg#icon-linkedin"></use></svg
-              ></a>
-            </li>
-          </ul>
-        </div>
-      </div>
     </header>
 
     <main>
@@ -120,7 +68,7 @@
       <section class="main-section">
         <div class="container">
           <h1 class="section-title">Effective Solutions for Your Business</h1>
-          <button class="action-button" type="button">Order Service</button>
+          <button class="action-button" type="button" data-modal-open>Order Service</button>
         </div>
       </section>
 
@@ -378,7 +326,7 @@
           <h2 class="team-title-vier">Our Portfolio</h2>
           <ul class="fourth-list">
             <!-- Перший пункт -->
-            <li class="team-item">
+            <li class="team-item" tabindex="0">
               <div class="image-container">
                 <img
                   src="./images/images-e.jpg"
@@ -400,7 +348,7 @@
             </li>
 
             <!-- Другий пункт -->
-            <li class="team-item">
+            <li class="team-item" tabindex="0">
               <div class="image-container">
                 <img
                   src="./images/images-f.jpg"
@@ -422,7 +370,7 @@
             </li>
 
             <!-- Третій пункт -->
-            <li class="team-item">
+            <li class="team-item" tabindex="0">
               <div class="image-container">
                 <img
                   src="./images/images-g.jpg"
@@ -444,7 +392,7 @@
             </li>
 
             <!-- Четвертий пункт -->
-            <li class="team-item">
+            <li class="team-item" tabindex="0">
               <div class="image-container">
                 <img
                   src="./images/images-h.jpg"
@@ -466,7 +414,7 @@
             </li>
 
             <!-- П’ятий пункт -->
-            <li class="team-item">
+            <li class="team-item" tabindex="0">
               <div class="image-container">
                 <img
                   src="./images/images-i.jpg"
@@ -488,7 +436,7 @@
             </li>
 
             <!-- Шостий пункт -->
-            <li class="team-item">
+            <li class="team-item" tabindex="0">
               <div class="image-container">
                 <img
                   src="./images/images-j.jpg"
@@ -581,10 +529,64 @@
       </div>
     </footer>
 
+      <div class="mobile-menu" id="mobile-menu" data-menu>
+        <div class="mobile-menu-container">
+          <button class="mobile-menu-close" type="button" aria-label="Close menu" data-menu-close>&times;</button>
+
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-nav-list">
+              <li>
+                <a href="./index.html" class="mobile-nav-link current"
+                  >Studio</a
+                >
+              </li>
+              <li><a href="#" class="mobile-nav-link">Portfolio</a></li>
+              <li><a href="#" class="mobile-nav-link">Contacts</a></li>
+            </ul>
+          </nav>
+
+          <address class="mobile-contacts">
+            <a href="tel:+110001111111" class="mobile-phone"
+              >+11 (000) 111-11-11</a
+            >
+            <a href="mailto:info@devstudio.com" class="mobile-email"
+              >info@devstudio.com</a
+            >
+          </address>
+
+          <ul class="mobile-socials">
+            <li>
+              <a href="#" class="social-icon-link"
+                ><svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use></svg
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="social-icon-link"
+                ><svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use></svg
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="social-icon-link"
+                ><svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use></svg
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="social-icon-link"
+                ><svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
     <!-- Модальне вікно. Контейнер для модального вікна -->
-    <div class="modal-container is-open">
+    <div class="modal-container" data-modal>
       <div class="modal">
-        <button class="close-button" type="button">
+        <button class="close-button" type="button" aria-label="Close dialog" data-modal-close>
           <svg width="8" height="8" class="icon-xsymbol">
             <use href="./images/icons.svg#icon-xsymbol"></use>
           </svg>
@@ -670,5 +672,7 @@
       </div>
     </div>
     <!-- Контейнер для модального вікна END -->
+    <script src="./js/menu.js" defer></script>
+    <script src="./js/modal.js" defer></script>
   </body>
 </html>
