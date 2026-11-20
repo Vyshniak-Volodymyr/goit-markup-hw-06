@@ -130,6 +130,9 @@
   .subscribe-wrapper {
     width: auto;
   }
+  .social-list-footer {
+    justify-content: flex-start;
+  }
   .subscribe-form {
     flex-direction: row;
     gap: 24px;

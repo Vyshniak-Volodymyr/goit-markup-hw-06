@@ -86,7 +86,7 @@
       <!-- Section №2 -->
       <section class="two-section" id="features">
         <div class="container">
-          <h2 class="visually-hidden">Team</h2>
+          <h2 class="features-title">Our features</h2>
           <ul class="team-list-dva">
             <!-- Пункт №1. Strategy. Section №2. -->
             <li class="list-section-two">
@@ -523,7 +523,7 @@
     <!-- Футер сторінки -->
 
     <footer class="site-footer" id="footer">
-      <div class="container-footer">
+      <div class="container container-footer">
         <div class="content-wrapper">
           <a href="./index.html" class="webstudio-link kolobok">
             WEB<span class="logo-span-footer">Studio</span>
@@ -596,7 +596,9 @@
           aria-label="Close menu"
           data-menu-close
         >
-          &times;
+          <svg width="8" height="8" aria-hidden="true">
+            <use href="./images/icons.svg#icon-xsymbol"></use>
+          </svg>
         </button>
 
         <nav class="mobile-menu-nav">
@@ -610,12 +612,18 @@
         </nav>
 
         <address class="mobile-contacts">
-          <a href="tel:+110001111111" class="mobile-phone"
-            >+11 (000) 111-11-11</a
-          >
-          <a href="mailto:info@devstudio.com" class="mobile-email"
-            >info@devstudio.com</a
-          >
+          <ul class="mobile-contacts-list">
+            <li>
+              <a href="tel:+110001111111" class="mobile-phone"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li>
+              <a href="mailto:info@devstudio.com" class="mobile-email"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
         </address>
 
         <ul class="mobile-socials">

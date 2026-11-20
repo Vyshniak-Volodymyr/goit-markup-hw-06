@@ -61,11 +61,13 @@
   color: #404bbf;
 }
 .mobile-contacts {
+  margin-bottom: 48px;
+  font-style: normal;
+}
+.mobile-contacts-list {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  margin-bottom: 48px;
-  font-style: normal;
 }
 .mobile-phone,
 .mobile-email {

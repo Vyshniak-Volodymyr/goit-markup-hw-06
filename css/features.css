@@ -1,6 +1,14 @@
 .two-section {
   padding: 96px 0;
 }
+.features-title {
+  margin-bottom: 72px;
+  color: #2e2f42;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
 .team-list-dva {
   display: flex;
   flex-direction: column;
@@ -17,6 +25,7 @@
   color: #2e2f42;
   text-align: center;
   font-size: 36px;
+  font-weight: 700;
   line-height: 1.11;
   letter-spacing: 0.02em;
 }
